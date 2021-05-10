@@ -1,0 +1,176 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "usuario": "fdimani@gmail.com",
+            "password": "123456",
+            "rol": "USER_ROLE"
+        },
+        {
+            "id": 2,
+            "usuario": "jerodriguezb@gmail.com",
+            "password": "123456",
+            "rol": "USER_ROLE"
+        },
+
+        {
+            "id": 3,
+            "usuario": "solanatrucco@gmail.com",
+            "password": "123456",
+            "rol": "USER_ROLE"
+        }
+
+    ],
+    "propiedades": [
+        {
+            "codigo":1,
+            "estadoprop_codigo":1,
+            "tipoprop_codigo":2,
+            "titulo":"Casa el Nogal",
+            "valor": 30.000,
+            "direccion":"Lamadrid xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "https://www.natania.com/img/NATANIA/mercaditos/casa-futura/01.jpg",
+            "barrio_codigo": 2,
+            "lugar_codigo": 1,
+            "superf_total": 233,
+            "superf_comun": 120,
+            "superf_propia": 100,
+            "superf_cubierta": 60,
+            "superf_semicubierta": 10,
+            "activo": true
+            
+        },
+        {
+            "codigo":2,
+            "estadoprop_codigo":1,
+            "tipoprop_codigo":2,
+            "titulo":"Casa Yerba Nuena",
+            "valor": 10.000,
+            "direccion":"LUCAS CORDOBA xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "./src/imagenes/landing/cards/alq100/alq10001.jpg",
+            "barrio_codigo": 1,
+            "lugar_codigo": 1,
+            "superf_total": 200,
+            "superf_comun": 100,
+            "superf_propia": 80,
+            "superf_cubierta": 70,
+            "superf_semicubierta": 10,
+            "activo": true
+        },
+        {
+            "codigo":3,
+            "estadoprop_codigo":2,
+            "tipoprop_codigo":2,
+            "titulo":"Casa Zona Norte",
+            "valor": 40.000,
+            "direccion":"Mitre xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "../src/imagenes/alquiler/RV__Fotos_,_video_y_descripcion_de_propiedades/yerba buena casa alquiler 31 marzo 101.jpg",
+            "barrio_codigo": 2,
+            "lugar_codigo": 1,
+            "superf_total": 250,
+            "superf_comun": 200,
+            "superf_propia": 150,
+            "superf_cubierta": 100,
+            "superf_semicubierta": 50,
+            "activo": true
+            
+        }
+    ],
+    "estadoprop": [
+        {
+            "codigo":1,
+            "descripcion": "Venta"
+        },
+        {
+            "codigo":2,
+            "descripcion": "Alquiler"
+        }
+        
+    ],
+    "tipoprop": [
+        {
+            "codigo":1,
+            "descripcion": "Casa"
+        },
+        {
+            "codigo":2,
+            "descripcion": "Departamento"
+        },
+        {
+            "codigo":3,
+            "descripcion": "Terreno"
+        },
+        {
+            "codigo":4,
+            "descripcion": "Local Comercial"
+            
+        },
+        {
+            "codigo":5,
+            "descripcion": "Galpon"
+            
+        },
+        {
+            "codigo":6,
+            "descripcion": "Cochera"
+            
+        },
+        {
+            "codigo":7,
+            "descripcion": "Oficina"
+            
+        },
+        {
+            "codigo":8,
+            "descripcion": "Campo"
+            
+        }
+
+    ],
+
+    "barrio": [
+            {
+                "codigo":1,
+                "descripcion": "Norte"
+            },
+            {
+                "codigo":2,
+                "descripcion": "Sur"
+            },
+            {
+                "codigo":3,
+                "descripcion": "Ciudadela"
+            },
+            {
+                "codigo":4,
+                "descripcion": "Viajantes"
+            }
+            
+        ],
+
+    "lugar": [
+            {
+                "codigo":1,
+                "descripcion": "San Miguel de Tucuman"
+            },
+            {
+                "codigo":2,
+                "descripcion": "Yerba Buena"
+            },
+            {
+                "codigo":3,
+                "descripcion": "Concepcion"
+            },
+            {
+                "codigo":4,
+                "descripcion": "Monteros"
+            }
+            
+        ]
+        
+    
+}
+
