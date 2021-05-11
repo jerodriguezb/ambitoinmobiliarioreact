@@ -27,7 +27,7 @@
             "estadoprop_codigo":1,
             "tipoprop_codigo":2,
             "titulo":"Casa el Nogal",
-            "valor": 30.000,
+            "valor": "30.000",
             "direccion":"Lamadrid xxx",
             "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
             "imagen": "https://www.natania.com/img/NATANIA/mercaditos/casa-futura/01.jpg",
@@ -46,10 +46,10 @@
             "estadoprop_codigo":1,
             "tipoprop_codigo":2,
             "titulo":"Casa Yerba Nuena",
-            "valor": 10.000,
-            "direccion":"LUCAS CORDOBA xxx",
+            "valor": "10.000",
+            "direccion":"Lucas Cordoba 215",
             "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
-            "imagen": "./src/imagenes/landing/cards/alq100/alq10001.jpg",
+            "imagen": "https://www.natania.com/img/NATANIA/CASAS/CasaAmericana/casa-americana.png",
             "barrio_codigo": 1,
             "lugar_codigo": 1,
             "superf_total": 200,
@@ -63,11 +63,109 @@
             "codigo":3,
             "estadoprop_codigo":2,
             "tipoprop_codigo":2,
-            "titulo":"Casa Zona Norte",
-            "valor": 40.000,
+            "titulo":"Casa Zona Norte1",
+            "valor": "10.000",
             "direccion":"Mitre xxx",
             "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
-            "imagen": "../src/imagenes/alquiler/RV__Fotos_,_video_y_descripcion_de_propiedades/yerba buena casa alquiler 31 marzo 101.jpg",
+            "imagen": "https://static1.maixon.com/838744_p/extra_large_5fe207ae6666c.jpg",
+            "barrio_codigo": 2,
+            "lugar_codigo": 1,
+            "superf_total": 250,
+            "superf_comun": 200,
+            "superf_propia": 150,
+            "superf_cubierta": 100,
+            "superf_semicubierta": 50,
+            "activo": true
+            
+        },
+
+        {
+            "codigo":4,
+            "estadoprop_codigo":2,
+            "tipoprop_codigo":2,
+            "titulo":"Casa Zona Norte1",
+            "valor": "10.000",
+            "direccion":"Mitre xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "https://static1.maixon.com/091814_p/extra_large_5f6b84c97bcd8.jpg",
+            "barrio_codigo": 2,
+            "lugar_codigo": 1,
+            "superf_total": 250,
+            "superf_comun": 200,
+            "superf_propia": 150,
+            "superf_cubierta": 100,
+            "superf_semicubierta": 50,
+            "activo": true
+            
+        },
+        {
+            "codigo":5,
+            "estadoprop_codigo":2,
+            "tipoprop_codigo":2,
+            "titulo":"Casa Zona Norte1",
+            "valor": "10.000",
+            "direccion":"Mitre xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "https://static1.maixon.com/418354_p/extra_large_600842a9b30e9.jpg",
+            "barrio_codigo": 2,
+            "lugar_codigo": 1,
+            "superf_total": 250,
+            "superf_comun": 200,
+            "superf_propia": 150,
+            "superf_cubierta": 100,
+            "superf_semicubierta": 50,
+            "activo": true
+            
+        },
+        {
+            "codigo":6,
+            "estadoprop_codigo":2,
+            "tipoprop_codigo":2,
+            "titulo":"Casa Zona Norte1",
+            "valor": "10.000",
+            "direccion":"Mitre xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqOZHgXDB7oSOQmpa1L_gahnr7VpKQLLCV5g&usqp=CAU",
+            "barrio_codigo": 2,
+            "lugar_codigo": 1,
+            "superf_total": 250,
+            "superf_comun": 200,
+            "superf_propia": 150,
+            "superf_cubierta": 100,
+            "superf_semicubierta": 50,
+            "activo": true
+            
+        },
+
+        {
+            "codigo":7,
+            "estadoprop_codigo":2,
+            "tipoprop_codigo":2,
+            "titulo":"Casa Zona Norte1",
+            "valor": "10.000",
+            "direccion":"Mitre xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "https://www.natania.com/img/NATANIA/mercaditos/depto-1/01.png",
+            "barrio_codigo": 2,
+            "lugar_codigo": 1,
+            "superf_total": 250,
+            "superf_comun": 200,
+            "superf_propia": 150,
+            "superf_cubierta": 100,
+            "superf_semicubierta": 50,
+            "activo": true
+            
+        },
+
+        {
+            "codigo":8,
+            "estadoprop_codigo":2,
+            "tipoprop_codigo":2,
+            "titulo":"Casa Zona Norte1",
+            "valor": "10.000",
+            "direccion":"Mitre xxx",
+            "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+            "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObOS5kniur54m7mJBiQEsGagqjx-bUWRovA&usqp=CAU",
             "barrio_codigo": 2,
             "lugar_codigo": 1,
             "superf_total": 250,
@@ -88,6 +186,7 @@
             "codigo":2,
             "descripcion": "Alquiler"
         }
+        
         
     ],
     "tipoprop": [
@@ -167,6 +266,28 @@
             {
                 "codigo":4,
                 "descripcion": "Monteros"
+            }
+            
+        ],
+
+        "carousel": [
+            {
+                "codigo":1,
+                "titulo":"Imagen 1",
+                "imagen": "https://staticbp.com/img/prop_new_b/497/00497674-01.jpg",
+                "activo": true
+            },
+            {
+                "codigo":2,
+                "titulo":"Imagen 2",
+                "imagen": "https://www.portaldearquitectos.com/uploads/prop_properties/estudio_claria_arquitectura_C0057_2_2_001_03.jpg",
+                "activo": true
+            },
+            {
+                "codigo":3,
+                "titulo":"Imagen 3",
+                "imagen": "https://www.decoracionia.net/imagenes/2016/10/casas-minimalistas-2.jpg",
+                "activo": true
             }
             
         ]
