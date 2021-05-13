@@ -10,6 +10,16 @@ body {
   font-family: helvetica, serif;
 }
 /*Header*/
+#header .contacto {
+  /* background-color: rgba(46, 42, 42, 0.801) !important; */
+  background-color: rgb(53, 105, 136) !important;
+  color: white;
+  font-size: 3rem;
+  font-family: helvetica, serif;
+  padding: 1.5rem;
+  text-align: center;
+}
+
 #header nav {
   /* background-color: rgba(46, 42, 42, 0.801) !important; */
   background-color: rgb(53, 105, 136) !important;
@@ -21,6 +31,7 @@ body {
 }
 
 #header span {
+  background-color: rgb(53, 105, 136) !important;
   padding-top: 1rem;
   font-size: 150%;
 }
@@ -28,7 +39,7 @@ body {
 #menu123 {
   /* background-color: black; */
 
-  background-color: rgba(26, 12, 77, 0.952) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   color: white;
   display: flex;
   flex-direction: row;
@@ -69,6 +80,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   z-index: 1;
+  font-size: 1.5rem;
 }
 
 #carousel .overlay .container,
@@ -90,13 +102,14 @@ body {
   width: 250px;
   border-radius: 10px;
   overflow: hidden;
+  font-size: 2rem;
 }
 .card-img-top {
   height: 150px;
 }
 .card img {
   height: 200px;
-  width: auto;
+  /* width: auto; */
   object-fit: cover;
 }
 
@@ -107,5 +120,133 @@ body {
 
 #speakers .card,
 #speakers .card h5 {
+  font-size: 2rem;
+}
+
+/*Footer*/
+#footer {
+  background-color: rgb(53, 105, 136) !important;
+  min-height: 5rem;
+  padding: 2rem;
+  text-align: center;
+  color: white;
   font-size: 1.5rem;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer img {
+  height: 7rem;
+}
+
+/*fin footer*/
+
+/*botones redes sociales*/
+
+.sticky-container {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -150px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100;
+}
+.sticky li {
+  list-style-type: none;
+  background-color: #fff;
+  color: #efefef;
+  height: 43px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.sticky li:hover {
+  margin-left: -60px;
+}
+.sticky li img {
+  float: left;
+  margin: 5px 4px;
+  margin-right: 5px;
+}
+.sticky li p {
+  padding-top: 5px;
+  margin: 0px;
+  line-height: 16px;
+  font-size: 11px;
+}
+.sticky li p a {
+  text-decoration: none;
+  color: #2c3539;
+}
+.sticky li p a:hover {
+  text-decoration: underline;
+}
+
+/*fin botones redes sociales*/
+
+/*****************************************/
+
+@media (min-width: 1024) {
+  #lugar-fecha img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*marquesina*/
+@media (max-width: 768px) {
+  #marque {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #incorporaciones {
+    display: none;
+  }
+}
+/*footer centrado*/
+@media (max-width: 768px) {
+  #piecontacto p {
+    text-align: center !important;
+  }
+}
+@media (max-width: 768px) {
+  #footer img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #inlineFormCustomSelectPref {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #inlineFormCustomSelectPref {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #main .carousel-inner img {
+    height: 35rem;
+    object-fit: cover;
+    filter: grayscale(70%);
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+
+    justify-content: center;
+  }
 }

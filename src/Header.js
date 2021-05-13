@@ -4,14 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const Header = () => {
  
-     return (
-   
-        <header id="header" className="container">
-
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div className="container">
-            <a className="navbar-brand" href="#"
-              ><img src="https://logos-marcas.com/wp-content/uploads/2020/04/Huawei-Logo.png"  alt="logo" /> <span>Ambito Inmobiliaria</span></a
+  return (
+      <header id="header">
+        <main>
+         <div className="contacto"> 
+            <h4>Contacto: Benjamin Neville - Cel +5493816900030 +5493814909195 - Email:inmobiliaria.ambito@gmail.com</h4>  
+             
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container">
+            <a className="navbar-brand" href="#">
+              {/* <h3>Contacto: Benjamin Neville Tel 381-6900030 - Email:inmobiliaria.ambito@gmail.com</h3>   */}
+              <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Huawei-Logo.png"  
+              alt="logo" /> 
+              <span>Ambito Inmobiliaria</span></a
             >
             <button
               className="navbar-toggler"
@@ -47,7 +52,9 @@ export const Header = () => {
             </div>
           </div>
         </nav>
-      </header>
+      </div>
+      </main>
+    </header>
 
   )
 }

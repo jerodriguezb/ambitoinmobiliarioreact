@@ -22,7 +22,7 @@ const Carousel = () => {
 
   return (
     
-    <div className="container">
+    <div>
    
       <div
         id="carousel"
@@ -33,21 +33,21 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="https://staticbp.com/img/prop_new_b/497/00497674-01.jpg"
+              src="https://fachadascasas.com/wp-content/uploads/2020/10/Casa-minimalista-blogc-2-1-edited.jpg"
               className="d-block w-100"
               alt="site 1"
             />
           </div>
           <div className="carousel-item">
             <img
-              src="https://www.portaldearquitectos.com/uploads/prop_properties/estudio_claria_arquitectura_C0057_2_2_001_03.jpg"
+              src="http://www.jarquitectos.com/wp-content/uploads/2018/11/Atrium_House_01.jpg"
               className="d-block w-100"
               alt="site 2"
             />
           </div>
           <div className="carousel-item">
             <img
-              src="https://www.decoracionia.net/imagenes/2016/10/casas-minimalistas-2.jpg"
+              src="https://fachadascasas.com/wp-content/uploads/2020/10/Casa-minimalista-blogc-9-1-edited.jpg"
               className="d-block w-100"
               alt="site 3"
             />

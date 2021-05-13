@@ -21,14 +21,13 @@ const BuscarEstado = () => {
 
   return (
     <main>
-      <div className="container">
+      <div>
        <section id="menu123">
         
-
         <form className="form-inline">
           <label className="my-1 mr-2" for="inlineFormCustomSelectPref">Estado</label>
           <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Elija...</option>
+                <option selected>Seleccione opcion deseada</option>
                 {estado.data.map((estado)=>{
                     return (
                             <option value={estado.codigo}>{estado.descripcion}</option>
@@ -40,7 +39,7 @@ const BuscarEstado = () => {
 
           <label className="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo</label>
           <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-          <option selected>Elija...</option>
+          <option selected>Seleccione opcion deseada</option>
                 {estado.data.map((estado)=>{
                     return (
                            <option value={estado.codigo}>{estado.descripcion}</option>
@@ -52,7 +51,7 @@ const BuscarEstado = () => {
 
           <label className="my-1 mr-2" for="inlineFormCustomSelectPref">Lugar</label>
           <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Elija...</option>
+            <option selected>Seleccione opcion deseada</option>
             <option value="1">San Miguel de Tucuman</option>
             <option value="2">Yerba Buena</option>
             <option value="3">Tafi del Valle</option>
@@ -67,7 +66,7 @@ const BuscarEstado = () => {
 
           <label className="my-1 mr-2" for="inlineFormCustomSelectPref">Ambientes</label>
           <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Elija...</option>
+            <option selected>Seleccione opcion deseada</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
