@@ -6,3 +6,4 @@ export const getPropiedades = async () => {
   const { data } = resp;
   return data;
 };
+

@@ -13,7 +13,6 @@ export const Header = () => {
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
             <a className="navbar-brand" href="#">
-              {/* <h3>Contacto: Benjamin Neville Tel 381-6900030 - Email:inmobiliaria.ambito@gmail.com</h3>   */}
               <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Huawei-Logo.png"  
               alt="logo" /> 
               <span>Ambito Inmobiliaria</span></a
@@ -32,8 +31,8 @@ export const Header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#"
-                    >Ventas<span className="sr-only">(current)</span></a
+                  <a className="nav-link" href="#">Ventas<span 
+                  className="sr-only">(current)</span></a
                   >
                 </li>
                 <li className="nav-item">

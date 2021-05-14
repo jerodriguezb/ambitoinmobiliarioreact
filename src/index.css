@@ -143,6 +143,11 @@ body {
 
 /*fin footer*/
 
+#marque img {
+  height: 25rem;
+  width: 25rem;
+}
+
 /*botones redes sociales*/
 
 .sticky-container {
@@ -243,10 +248,12 @@ body {
     filter: grayscale(70%);
   }
 }
-@media (max-width: 768px) {
-  .card {
-    display: flex;
 
+/*card*/
+@media (max-width: 768px) {
+  #card {
+    display: flex;
     justify-content: center;
+    font-size: 1rem;
   }
 }

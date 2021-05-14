@@ -38,7 +38,8 @@
             "superf_propia": 100,
             "superf_cubierta": 60,
             "superf_semicubierta": 10,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
             
         },
         {
@@ -57,7 +58,8 @@
             "superf_propia": 80,
             "superf_cubierta": 70,
             "superf_semicubierta": 10,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
         },
         {
             "codigo":3,
@@ -75,7 +77,8 @@
             "superf_propia": 150,
             "superf_cubierta": 100,
             "superf_semicubierta": 50,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
             
         },
 
@@ -95,7 +98,8 @@
             "superf_propia": 150,
             "superf_cubierta": 100,
             "superf_semicubierta": 50,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
             
         },
         {
@@ -114,7 +118,8 @@
             "superf_propia": 150,
             "superf_cubierta": 100,
             "superf_semicubierta": 50,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
             
         },
         {
@@ -133,7 +138,8 @@
             "superf_propia": 150,
             "superf_cubierta": 100,
             "superf_semicubierta": 50,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
             
         },
 
@@ -153,7 +159,8 @@
             "superf_propia": 150,
             "superf_cubierta": 100,
             "superf_semicubierta": 50,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
             
         },
 
@@ -173,7 +180,8 @@
             "superf_propia": 150,
             "superf_cubierta": 100,
             "superf_semicubierta": 50,
-            "activo": true
+            "activo": true,
+            "mostrar_portada": true
             
         }
     ],
@@ -290,8 +298,38 @@
                 "activo": true
             }
             
-        ]
+        ],
         
-    
+        "marquesina": [
+            {
+                "codigo":1,
+                "titulo":"Coca Cola",
+                "valor": "30.000",
+                "direccion":"Lamadrid xxx",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+                "imagen": "https://thefoodtech.com/wp-content/uploads/2020/12/se-suma-coca-cola-a-la-hora-del-planeta.jpg",
+                "activo": true
+                
+            },
+            {
+                "codigo":2,
+                "titulo":"Casa el Nogal",
+                "valor": "30.000",
+                "direccion":"Lamadrid xxx",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+                "imagen": "https://thefoodtech.com/wp-content/uploads/2020/12/se-suma-coca-cola-a-la-hora-del-planeta.jpg",
+                "activo": true
+                
+            }, {
+                "codigo":2,
+                "titulo":"Casa el Nogal",
+                "valor": "30.000",
+                "direccion":"Lamadrid xxx",
+                "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+                "imagen": "https://thefoodtech.com/wp-content/uploads/2020/12/se-suma-coca-cola-a-la-hora-del-planeta.jpg",
+                "activo": true
+                
+            }
+        ]
 }
 
