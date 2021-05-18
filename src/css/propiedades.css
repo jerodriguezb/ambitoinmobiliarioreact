@@ -1,0 +1,37 @@
+.background-curso {
+  background-color: #051626;
+  height: 100vh;
+  color: #ffff;
+}
+
+.card {
+  color: black;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.card-img-top {
+  height: 150px;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card span {
+  color: rgb(211, 208, 208);
+  font-size: 15px;
+}
+
+.card i {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* .avatar {
+  border-radius: 100%;
+  width: 30px;
+  border: 2px solid rgb(34, 155, 211);
+} */

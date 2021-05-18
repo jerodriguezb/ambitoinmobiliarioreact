@@ -1,20 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Cursos from "./pages/Cursos";
+import Propiedades from "./pages/Propiedades";
 import Error404 from "./pages/Error404";
 import Home from "./pages/Home";
 import Layout from "./components/Layout";
-import Curso from "./pages/Curso";
+import Propiedad from "./pages/Propiedad";
 
 const App = () => {
   return (
     <>
       <Router>
-        <Layout>
+        <Layout>tar
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/cursos" component={Cursos} />
-            <Route exact path="/curso/:id" component={Curso} />
+            <Route exact path="/propiedades" component={Propiedades} />
+            <Route exact path="/propiedad/:id" component={Propiedad} />
             <Route component={Error404} />
           </Switch>
         </Layout>

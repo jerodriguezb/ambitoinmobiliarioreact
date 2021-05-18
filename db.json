@@ -1,72 +1,209 @@
 {
-    "usuarios": [
-        {
-            "id": 1,
-            "usuario": "pmarino2013@gmail.com",
-            "password": "123456",
-            "rol": "USER_ROLE"
-        }
-    ],
-    "cursos": [
-        {
-            "id": 1,
-            "title": "Curso CSS flex box y Grid",
-            "imagen": "https://www.solucionex.com/sites/default/files/posts/imagen/css_blog.png",
-            "detalle": "CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y estructuración de páginas web (HTML o XML).",
-            "video": "https://www.youtube.com/embed/24gNhTcy6pw",
-            "mentor": "Pablo Marino",
-            "img_mentor": "http://1.gravatar.com/avatar/2bd6474c77fd501924adfa0aae631f57"
-        },
-        {
-            "id": 2,
-            "title": "Curso Fundamentos Javascript",
-            "imagen": "https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/funciones-en-javascript-t1.png",
-            "detalle": "JavaScript es el único lenguaje de programación que funciona en los navegadores de forma nativa (lenguaje interpretado sin necesidad de compilación). Por tanto se utiliza como complemento de HTML y CSS para crear páginas webs.",
-            "video": "https://www.youtube.com/embed/NmaHJxanMcA",
-            "mentor": "Pablo Marino",
-            "img_mentor": "http://1.gravatar.com/avatar/2bd6474c77fd501924adfa0aae631f57"
-        },
-        {
-            "id": 3,
-            "title": "Curso HTML5 desde cero a experto",
-            "imagen": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2014/07/52149-html5.jpg?itok=iZUNlvf7",
-            "detalle": "El lenguaje html (hypertext markup language) se utiliza para el desarrollo y creación de páginas web. Se compone de una serie de etiquetas que el navegador interpreta.",
-            "video": "https://www.youtube.com/embed/vz4z0RLcAyk",
-            "mentor": "Pablo Marino",
-            "img_mentor": "http://1.gravatar.com/avatar/2bd6474c77fd501924adfa0aae631f57"
-        }
-    ],
-    "programas": [
-        {
-            "id": 1,
-            "id_curso": 1,
-            "programa": [
-                "Presentación de CSS",
-                "Position",
-                "Flex Box",
-                "Responsive designe"
-            ]
-        },
-        {
-            "id": 2,
-            "id_curso": 2,
-            "programa": [
-                "Variables y operadores",
-                "Trabajando con String",
-                "Objeto Math",
-                "Funciones anónimas y declarativas"
-            ]
-        },
-        {
-            "id": 3,
-            "id_curso": 3,
-            "programa": [
-                "Que es HTML?",
-                "Etiquetas semánticas",
-                "Primer proyecto de supermercado",
-                "Tablas",
-                "Formularios"
-            ]
-        }
-    ]
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "pmarino2013@gmail.com",
+      "password": "123456",
+      "rol": "USER_ROLE"
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 2
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 3
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 4
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 5
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 6
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 7
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 8
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 9
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 10
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 11
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 12
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 13
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 14
+    },
+    {
+      "email": "pmarino@gmail.com",
+      "usuario": "pmarino",
+      "id": 15
+    }
+  ],
+  "propiedades": [
+    {
+      "id": 1,
+      "estadoprop_codigo":1,
+      "tipoprop_codigo":2,
+      "titulo":"Casa el Nogal",
+      "valor": "30.000",
+      "direccion":"Lamadrid xxx",
+      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+      "imagen": "https://www.natania.com/img/NATANIA/mercaditos/casa-futura/01.jpg",
+      "barrio_codigo": 2,
+      "lugar_codigo": 1,
+      "superf_total": 233,
+      "superf_comun": 120,
+      "superf_propia": 100,
+      "superf_cubierta": 60,
+      "superf_semicubierta": 10,
+      "activo": true,
+      "mostrar_portada": true,
+      "detalle": "CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y estructuración de páginas web (HTML o XML).",
+      "video": "https://www.youtube.com/embed/24gNhTcy6pw",
+      "mentor": "Benjamin Neville",
+      "img_mentor": "http://1.gravatar.com/avatar/2bd6474c77fd501924adfa0aae631f57"
+          
+    },
+    {
+      "id": 2,
+      "estadoprop_codigo":1,
+      "tipoprop_codigo":2,
+      "titulo":"Casa el Nogal",
+      "valor": "30.000",
+      "direccion":"Lamadrid xxx",
+      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+      "imagen": "https://www.natania.com/img/NATANIA/mercaditos/casa-futura/01.jpg",
+      "barrio_codigo": 2,
+      "lugar_codigo": 1,
+      "superf_total": 233,
+      "superf_comun": 120,
+      "superf_propia": 100,
+      "superf_cubierta": 60,
+      "superf_semicubierta": 10,
+      "activo": true,
+      "mostrar_portada": true,
+      "detalle": "CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y estructuración de páginas web (HTML o XML).",
+      "video": "https://www.youtube.com/embed/24gNhTcy6pw",
+      "mentor": "Benjamin Neville",
+      "img_mentor": "http://1.gravatar.com/avatar/2bd6474c77fd501924adfa0aae631f57"
+    },
+    {
+      "id": 3,
+      "estadoprop_codigo":1,
+      "tipoprop_codigo":2,
+      "titulo":"Casa el Nogal",
+      "valor": "30.000",
+      "direccion":"Lamadrid xxx",
+      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+      "imagen": "https://www.natania.com/img/NATANIA/mercaditos/casa-futura/01.jpg",
+      "barrio_codigo": 2,
+      "lugar_codigo": 1,
+      "superf_total": 233,
+      "superf_comun": 120,
+      "superf_propia": 100,
+      "superf_cubierta": 60,
+      "superf_semicubierta": 10,
+      "activo": true,
+      "mostrar_portada": true,
+      "detalle": "CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y estructuración de páginas web (HTML o XML).",
+      "video": "https://www.youtube.com/embed/24gNhTcy6pw",
+      "mentor": "Benjamin Neville",
+      "img_mentor": "http://1.gravatar.com/avatar/2bd6474c77fd501924adfa0aae631f57"
+    },
+    {
+      "id": 3,
+      "estadoprop_codigo":1,
+      "tipoprop_codigo":2,
+      "titulo":"Casa el Nogal",
+      "valor": "30.000",
+      "direccion":"Lamadrid xxx",
+      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra, nunc et commodo aliquam, leo tellus dignissim diam, vitae suscipit lorem dui ut ex. Mauris fermentum sagittis ipsum nec convallis.", 
+      "imagen": "https://www.natania.com/img/NATANIA/mercaditos/casa-futura/01.jpg",
+      "barrio_codigo": 2,
+      "lugar_codigo": 1,
+      "superf_total": 233,
+      "superf_comun": 120,
+      "superf_propia": 100,
+      "superf_cubierta": 60,
+      "superf_semicubierta": 10,
+      "activo": true,
+      "mostrar_portada": true,
+      "detalle": "CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y estructuración de páginas web (HTML o XML).",
+      "video": "https://www.youtube.com/embed/24gNhTcy6pw",
+      "mentor": "Benjamin Neville",
+      "img_mentor": "http://1.gravatar.com/avatar/2bd6474c77fd501924adfa0aae631f57"
+    }
+
+  ],
+  "programas": [
+    {
+      "id": 1,
+      "id_curso": 1,
+      "programa": [
+        "Presentación de CSS",
+        "Position",
+        "Flex Box",
+        "Responsive designe"
+      ]
+    },
+    {
+      "id": 2,
+      "id_curso": 2,
+      "programa": [
+        "Variables y operadores",
+        "Trabajando con String",
+        "Objeto Math",
+        "Funciones anónimas y declarativas"
+      ]
+    },
+    {
+      "id": 3,
+      "id_curso": 3,
+      "programa": [
+        "Que es HTML?",
+        "Etiquetas semánticas",
+        "Primer proyecto de supermercado",
+        "Tablas",
+        "Formularios"
+      ]
+    }
+  ]
 }

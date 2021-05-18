@@ -11,8 +11,8 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Link to="/" className="nav-link">Home</Link>
-                        <Link to="/cursos" className="nav-link">Cursos</Link>
-                        <NavDropdown title="Buscar Curso" id="basic-nav-dropdown">
+                        <Link to="/propiedades" className="nav-link">Propiedades</Link>
+                        <NavDropdown title="Buscar Propiedades" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Maquetación con HTML 5</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Estilos con CSS3 </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Fundamentos de Javascript</NavDropdown.Item>
