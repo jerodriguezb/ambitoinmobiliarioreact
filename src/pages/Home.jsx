@@ -4,7 +4,8 @@ import { getPropiedades } from "../helpers/rutaPropiedades";
 
 import { Link } from 'react-router-dom'
 // import NavBar from '../components/NavBar'
-import home2 from '../images/home2.png'
+// import home2 from '../images/home2.png'
+// import Redes from "../components/Redes"
 import Carousel from "../components/Carousel"
 import Principal from "../components/Principal"
 import Marquesina from "../components/Marquesina"
