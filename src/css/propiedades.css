@@ -3,35 +3,33 @@
   height: 100vh;
   color: #ffff;
 }
+.avatar {
+  border-radius: 100%;
+  width: 30px;
+  border: 2px solid rgb(34, 155, 211);
+}
 
 .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   color: black;
   width: 250px;
   border-radius: 10px;
   overflow: hidden;
-  height: 400px;
+  font-size: 0.25rem;
 }
-
 .card-img-top {
-  height: 150px;
+  height: 100px;
 }
-
 .card img {
+  height: 200px;
+  /* width: auto; */
   object-fit: cover;
 }
 
 .card span {
-  color: rgb(211, 208, 208);
-  font-size: 15px;
-}
-
-.card i {
+  color: white;
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
 }
-
-/* .avatar {
-  border-radius: 100%;
-  width: 30px;
-  border: 2px solid rgb(34, 155, 211);
-} */

@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export const getPropiedades = async () => {
   const resp = await axios("http://localhost:3004/propiedades");
 
@@ -19,4 +20,18 @@ export const getPropiedadId= async (id)=>{
   return data;
 
 }
+
+export const getCarousel = async () => {
+  const resp = await axios("http://localhost:3004");
+
+  const { data } = resp;
+  return data;
+};
+
+export const getMarquesina = async () => {
+  const resp = await axios("http://localhost:3004");
+
+  const { data } = resp;
+  return data;
+};
 

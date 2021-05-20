@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getPropiedades } from "../helpers/rutaPropiedades";
 import PropiedadesItem from "../components/PropiedadesItem";
+import Footer from "../components/Footer"
+
 
 import "../css/propiedades.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -21,7 +23,7 @@ const Propiedades = () => {
   }, []);
 
   return (
-   
+   <>
       <div className="container">
         <div className="row">
           <div className="col sm-4 mb-2">
@@ -36,8 +38,10 @@ const Propiedades = () => {
           })}
         </div>
       </div>
-    
+      <Footer />
+    </>  
   );
+  
 };
 
 export default Propiedades;

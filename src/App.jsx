@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Router>
-        <Layout>tar
+        <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/propiedades" component={Propiedades} />

@@ -4,28 +4,27 @@
   border: 2px solid rgb(34, 155, 211);
 }
 
-#card {
+.card {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: center;
   color: black;
-  width: 1200px;
+  width: 250px;
   border-radius: 10px;
   overflow: hidden;
   font-size: 0.25rem;
-  font-family: helvetica, serif;
 }
-#card-img-top {
+.card-img-top {
   height: 100px;
 }
-#card img {
+.card img {
   height: 200px;
-  width: auto;
+  /* width: auto; */
   object-fit: cover;
 }
 
-#card span {
+.card span {
   color: white;
   font-size: 20px;
 }

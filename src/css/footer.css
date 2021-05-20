@@ -1,0 +1,16 @@
+#footer {
+  background-color: #ffe600 !important;
+  min-height: 5rem;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+  font-size: 1.75rem;
+}
+
+#footer a {
+  color: black;
+}
+
+#footer img {
+  height: 7rem;
+}

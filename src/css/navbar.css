@@ -1,0 +1,35 @@
+.navBar h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+.navBar {
+  /* background-color: rgba(46, 42, 42, 0.801) !important; */
+  background-color: #ffe600 !important;
+  color: white;
+  font-size: 1rem;
+  font-family: helvetica, serif;
+  padding: 1rem;
+  text-align: left;
+}
+
+.navBar nav {
+  /* background-color: rgba(46, 42, 42, 0.801) !important; */
+  background-color: #ffe600 !important;
+  font-size: 1.5rem;
+  left: 20rem;
+  padding: 1rem;
+  color: white;
+}
+
+.navBar img {
+  height: 8rem;
+}
+
+.navBar span {
+  background-color: #ffe600 !important;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}

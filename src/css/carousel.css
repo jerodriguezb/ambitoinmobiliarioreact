@@ -1,0 +1,31 @@
+.carousel-inner img {
+  height: 70vh;
+  width: 10vh;
+  object-fit: cover;
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+
+#carousel .overlay button,
+#carousel .overlay a {
+  font-size: 1.5rem;
+}
