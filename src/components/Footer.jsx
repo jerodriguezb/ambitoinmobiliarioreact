@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="col-lg-8 col-xs-12 col-md-8">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 visible-md visible-lg copyright">
-                        <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Huawei-Logo.png"  
+                        <img src="https://lh3.googleusercontent.com/l72waZuMNi55w1PiR0cqa1SYPWhxuuIGOY6r2WEvXeCMI9w-u719PUQBSR0c6NvL9v8wptDvxIHW32voNWZy3L6vY7dcuavXZysjirhzRr9a4g_s0pw_QzE-0NyK-VLsVZfcIT1tJQ=w2400"  
                              alt="logo" /> 
                                 <p>© Copyright 2021 - <strong> Ambito Inmobiliaria </strong>-</p>
                         </div>			

@@ -21,7 +21,7 @@ const Propiedad = () => {
 
   return (
     <>
-    <div className="container mt-5">
+    <div className="container mt-2">
         <PropiedadDetail data={data} />;
 
     </div>

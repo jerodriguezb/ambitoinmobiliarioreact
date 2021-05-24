@@ -24,7 +24,8 @@
 }
 
 .navBar img {
-  height: 8rem;
+  height: 10rem;
+  padding: 1rem;
 }
 
 .navBar span {

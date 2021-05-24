@@ -10,7 +10,7 @@ const PropiedadesItem = ({ propiedad }) => {
           <div className="card" className="col-3 mb-4">
               { propiedad.mostrar_portada ? 
                 <div className="card mb-4">
-                  <img src={propiedad.imagen} 
+                  <img src={propiedad.imag1} 
                        className="card-img-top" 
                        alt={propiedad.titulo} /><img/>
                   <div className="card-body">
@@ -18,9 +18,9 @@ const PropiedadesItem = ({ propiedad }) => {
                     <span className="badge badge-pill badge-danger mb-2">
                     Venta
                     </span>
-                    <h4>{propiedad.direccion}</h4>
+                    <h4>{propiedad.direccionfisica}</h4>
                     <h3>$ {propiedad.valor}</h3>
-                    <i className="fa fa-home" aria-hidden="true"> {propiedad.superf_total} m²{" "} </i>  
+                    <i className="fa fa-home" aria-hidden="true"> {propiedad.superficieTotal} m²{" "} </i>  
                     <i className="fa fa-bed" aria-hidden="true"> {" "} 5 {" "}</i>
                     <i className="fa fa-bath" aria-hidden="true"> {" "} 2 {" "}</i>
                   </div>

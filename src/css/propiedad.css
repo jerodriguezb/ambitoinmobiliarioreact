@@ -15,12 +15,12 @@
   overflow: hidden;
   font-size: 0.25rem;
 }
+
 .card-img-top {
   height: 100px;
 }
 .card img {
   height: 200px;
-  /* width: auto; */
   object-fit: cover;
 }
 

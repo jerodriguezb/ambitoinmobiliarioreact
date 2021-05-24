@@ -42,17 +42,17 @@ const Propiedades = () => {
                           <div className="card mb-4">
                           {/* <Link to="/PropiedadDetalle" className="btn btn-outline-info mt-3">AAAAAAAA</Link> */}
                         
-                              <img src={propiedad.imagen} 
+                              <img src={propiedad.imag1} 
                                   className="card-img-top" 
-                                  alt={propiedad.titulo} />
+                                  alt={propiedad.Titulo} />
                               <div className="card-body">
-                                  <h3 className="card-title">{propiedad.titulo}</h3>
+                                  <h3 className="card-title">{propiedad.Titulo}</h3>
                                   <span className="badge badge-pill badge-danger mb-2">
                                     Venta
                                   </span>
-                                  <h4>{propiedad.direccion}</h4>
-                                  <h2>$ {propiedad.valor}</h2>
-                                  <i className="fa fa-home" aria-hidden="true"> {propiedad.superf_total} m²{" "} </i>  
+                                  <h4>{propiedad.DireccionFisica}</h4>
+                                  <h2>{propiedad.Valor}</h2>
+                                  <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal} m²{" "} </i>  
                                   <i className="fa fa-bed" aria-hidden="true"> {" "} 5 {" "}</i>
                                   <i className="fa fa-bath" aria-hidden="true"> {" "} 2 {" "}</i>
                               </div>
