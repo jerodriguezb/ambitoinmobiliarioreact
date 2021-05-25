@@ -46,6 +46,8 @@ const Propiedades = () => {
                                   className="card-img-top" 
                                   alt={propiedad.Titulo} />
                               <div className="card-body">
+                              <h3 className="card-title">{propiedad.CodigoPropiedad}</h3>
+                                  
                                   <h3 className="card-title">{propiedad.Titulo}</h3>
                                   <span className="badge badge-pill badge-danger mb-2">
                                     {propiedad.EstadoPropiedad}

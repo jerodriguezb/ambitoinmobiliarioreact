@@ -5,12 +5,22 @@
   color: red;
 }
 
-.avatar {
+/* .avatar {
   border-radius: 100%;
   width: 1rem;
   border: 0.5rem solid rgb(0, 255, 64);
-}
+} */
 
 #check {
+  font-size: 2rem;
   color: red;
+}
+
+#check1 {
+  font-size: 2rem;
+  color: blue;
+}
+
+.fa-ul {
+  font-size: 1.5rem;
 }

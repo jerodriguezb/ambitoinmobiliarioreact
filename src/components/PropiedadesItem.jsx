@@ -19,11 +19,11 @@ const PropiedadesItem = ({ propiedad }) => {
                       {propiedad.EstadoPropiedad}
                     </span>
                     <h4>{propiedad.DireccionFisica}</h4>
-                    <h3>$ {propiedad.Valor}</h3>
-                    <i className="fa fa-home" aria-hidden="true"> {propiedad.superficieTotal} m²{" "} </i>  
-                    <i className="fa fa-bed" aria-hidden="true"> {" "} 5 {" "}</i>
-                    <i className="fa fa-bath" aria-hidden="true"> {" "} 2 {" "}</i>
-                    <h2>{propiedad.CodigoPropiedad}</h2>
+                    <h3>{propiedad.Valor}</h3>
+                    <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal}{" "} </i>  
+                    <i className="fa fa-bed ml-5" aria-hidden="true"> {propiedad.Dormitorio}{" "}</i>
+                    <i className="fa fa-bath ml-5" aria-hidden="true"> {propiedad.Baño}{" "}</i>
+                    <h3 className="mt-5">{propiedad.CodigoPropiedad} - Cod. Int. {propiedad.id}</h3>
                   </div>
                 </div>
               : '' }    

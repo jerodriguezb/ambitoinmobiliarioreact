@@ -3,11 +3,11 @@
   height: 100vh;
   color: #ffff;
 }
-.avatar {
+/* .avatar {
   border-radius: 100%;
   width: 5px;
   border: 2px solid rgb(225, 0, 255);
-}
+} */
 
 .card {
   display: flex;
