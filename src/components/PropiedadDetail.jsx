@@ -42,7 +42,7 @@ const PropiedadDetail = ({data}) => {
             </div>
 
              <div className="col-4">
-                    <h3 className = "card-title mt-3">Datos de la Propiedad</h3>
+                    <h3 className = "card-title mt-5">Datos de la Propiedad</h3>
                     <hr></hr>
                     <h3 class="card-titulo mb-3">{data.Titulo}</h3>
                     <h4 class="card-precio mb-3"> Valor: {data.Valor}</h4>
@@ -61,7 +61,7 @@ const PropiedadDetail = ({data}) => {
           </div>
           <div className="row">
             <div className="col-8">
-              <h3 className = "card-title mt-3">Descripción de la Propiedad</h3>
+              <h3 className = "card-title mt-5">Descripción de la Propiedad</h3>
               <hr></hr>
               <h5>{data.Descripcion}</h5>
             </div>
@@ -69,10 +69,54 @@ const PropiedadDetail = ({data}) => {
          
           <div className="row">
             <div className="col-8">
-              <h3 className = "card-title mt-3">Adicioaneles y Servicios</h3>
+              <h3 className = "card-title mt-5">Adicionales y Servicios</h3>
               <hr></hr>
-              <h5>{data.Descripcion}</h5>
+              
+              <div className="col">
+           
+                  
+                
+                <div className="row">
+                    { data.Cocina ? (
+                      <ul className="fa-ul">
+                      <li><i id="check" className="fa fa-check-circle mt-2"></i>Cocina</li>
+                      </ul>
+                    ) : '' } 
+                
+                    { data.Comedor ? (
+                      <ul className="fa-ul">
+                      <li><i id="check" className="fa fa-check-circle mt-2"></i>Comedor</li>
+                      </ul>
+                    ) : '' } 
+            
+                  
+                    { data.CocinaComedor ? (
+                      <ul className="fa-ul">
+                      <li><i id="check" className="fa fa-check-circle mt-2"></i>CocinaComedor</li>
+                      </ul>
+                    ) : '' } 
+                
+                    { data.Placard ? (
+                      <ul className="fa-ul">
+                      <li><i id="check" className="fa fa-check-circle mt-2"></i>Placard</li>
+                      </ul>
+                    ) : '' } 
+         
+
+
+
+
+                    
+                 
+               
+              
+                </div>
+              </div>
+            
             </div>
+          
+          
+          
           </div>  
             
             

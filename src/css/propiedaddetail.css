@@ -4,3 +4,13 @@
 .card-precio {
   color: red;
 }
+
+.avatar {
+  border-radius: 100%;
+  width: 1rem;
+  border: 0.5rem solid rgb(0, 255, 64);
+}
+
+#check {
+  color: red;
+}

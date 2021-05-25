@@ -12,17 +12,18 @@ const PropiedadesItem = ({ propiedad }) => {
                 <div className="card mb-4">
                   <img src={propiedad.imag1} 
                        className="card-img-top" 
-                       alt={propiedad.titulo} /><img/>
+                       alt={propiedad.Titulo} /><img/>
                   <div className="card-body">
-                    <h3 className="card-title">{propiedad.titulo}</h3>
+                    <h3 className="card-title">{propiedad.Titulo}</h3>
                     <span className="badge badge-pill badge-danger mb-2">
-                    Venta
+                      {propiedad.EstadoPropiedad}
                     </span>
-                    <h4>{propiedad.direccionfisica}</h4>
-                    <h3>$ {propiedad.valor}</h3>
+                    <h4>{propiedad.DireccionFisica}</h4>
+                    <h3>$ {propiedad.Valor}</h3>
                     <i className="fa fa-home" aria-hidden="true"> {propiedad.superficieTotal} m²{" "} </i>  
                     <i className="fa fa-bed" aria-hidden="true"> {" "} 5 {" "}</i>
                     <i className="fa fa-bath" aria-hidden="true"> {" "} 2 {" "}</i>
+                    <h2>{propiedad.CodigoPropiedad}</h2>
                   </div>
                 </div>
               : '' }    

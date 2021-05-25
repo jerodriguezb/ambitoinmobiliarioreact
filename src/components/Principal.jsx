@@ -48,13 +48,14 @@ const Propiedades = () => {
                               <div className="card-body">
                                   <h3 className="card-title">{propiedad.Titulo}</h3>
                                   <span className="badge badge-pill badge-danger mb-2">
-                                    Venta
+                                    {propiedad.EstadoPropiedad}
                                   </span>
                                   <h4>{propiedad.DireccionFisica}</h4>
                                   <h2>{propiedad.Valor}</h2>
                                   <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal} m²{" "} </i>  
                                   <i className="fa fa-bed" aria-hidden="true"> {" "} 5 {" "}</i>
                                   <i className="fa fa-bath" aria-hidden="true"> {" "} 2 {" "}</i>
+                                  <h2>{propiedad.CodigoPropiedad}</h2>
                               </div>
                           </div>
 
