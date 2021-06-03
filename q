@@ -1,0 +1,65 @@
+[33mcommit 1aac52298174198ecba9396beff210e124117ce4[m[33m ([m[1;36mHEAD -> [m[1;32mfabricio[m[33m)[m
+Author: Fabricio <fdimani1@gmail.com>
+Date:   Tue May 25 20:00:23 2021 -0300
+
+    subidas 18 propiedades
+
+[33mcommit 2f7618864554ec1ed3545acf7c467d6ac0687e82[m
+Author: Fabricio <fdimani1@gmail.com>
+Date:   Tue May 25 11:43:10 2021 -0300
+
+    resuelto items servicios
+
+[33mcommit 0c962c59d52599d6110ad9d91c8d952272d28825[m
+Author: Fabricio <fdimani1@gmail.com>
+Date:   Mon May 24 18:52:44 2021 -0300
+
+    en preparacion de google maps
+
+[33mcommit 83b556106b8889ceb793f88db638fc337fb43078[m
+Author: Fabricio <fdimani1@gmail.com>
+Date:   Thu May 20 20:24:47 2021 -0300
+
+    funcionando link marquesina con estilos
+
+[33mcommit cb8a8a0dd7af87338c2ccdb8bab269971d158c5e[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Fabricio <fdimani1@gmail.com>
+Date:   Thu May 20 17:41:09 2021 -0300
+
+    Marquesina funcionando
+
+[33mcommit 298ce013428cf44995b04bd55ed43cece314100f[m
+Author: Fabricio <fdimani1@gmail.com>
+Date:   Tue May 18 08:39:29 2021 -0300
+
+    funcionando los link 4 card
+
+[33mcommit eabc1fea6d09ca77a65a5a32f06e43de2fb24ebf[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Pablo Marino <pmarino2013@gmail.com>
+Date:   Tue May 11 21:25:11 2021 -0300
+
+    PÃagina de curso con parametros
+
+[33mcommit 4a05ec2d8f46dad07f9ffb53e62e7db8c52ade0e[m
+Author: Pablo Marino <pmarino2013@gmail.com>
+Date:   Fri May 7 21:12:06 2021 -0300
+
+    Tarjetas con los cursos
+
+[33mcommit 47a3286c96ce343fcb266820536862048ae6c128[m
+Author: Pablo Marino <pmarino2013@gmail.com>
+Date:   Tue May 4 21:09:39 2021 -0300
+
+    Agregando paginas y layout
+
+[33mcommit bac514b1f67c9807b1b50d8c290c56f221b15a64[m
+Author: Pablo Marino <pmarino2013@gmail.com>
+Date:   Tue May 4 09:25:57 2021 -0300
+
+    Preparando archivos para iniciar proyecto
+
+[33mcommit 9d2f8059e2f31d4dd806d8db8732f794fae79196[m
+Author: Pablo Marino <pmarino2013@gmail.com>
+Date:   Tue May 4 09:11:05 2021 -0300
+
+    Initialize project using Create React App

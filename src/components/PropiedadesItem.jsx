@@ -6,7 +6,7 @@ import "../css/propiedades.css";
 const PropiedadesItem = ({ propiedad }) => {
   return (
    
-      <Link to={`/propiedad/${propiedad.id}`}>
+      <Link to={`/propiedad/${propiedad.id}`} className="text-decoration-none">
           <div className="card" className="col-3 mb-4">
               { propiedad.mostrar_portada ? 
                 <div className="card mb-4">

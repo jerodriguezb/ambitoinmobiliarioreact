@@ -31,86 +31,131 @@ const Propiedades = () => {
             <hr></hr>
           </div>
         </div>
-        
+    
         <div className="row">
-        
-                {propiedades.data.map((propiedad =>  {
-                  return(
-                      
-                    <div id="card" className="col-lg-3">
-                       { propiedad.mostrar_portada ? 
-                          <div className="card mb-4">
-                          {/* <Link to="/PropiedadDetalle" className="btn btn-outline-info mt-3">AAAAAAAA</Link> */}
-                        
+    
+          {propiedades.data.map((propiedad => { 
+         
+            return(
+                  <>
+                    { propiedad.EstadoPropiedad === "Venta" && (
+                      <div id="card" className="col-lg-3">
+                        <Link to={`/propiedad/${propiedad.id}`} className="text-decoration-none">
+                           <div className="card mb-4">
                               <img src={propiedad.imag1} 
                                   className="card-img-top" 
-                                  alt={propiedad.Titulo} />
+                                  alt={propiedad.Titulo} /><img/>
                               <div className="card-body">
-                              <h3 className="card-title">{propiedad.CodigoPropiedad}</h3>
-                                  
-                                  <h3 className="card-title">{propiedad.Titulo}</h3>
-                                  <span className="badge badge-pill badge-danger mb-2">
-                                    {propiedad.EstadoPropiedad}
-                                  </span>
-                                  <h4>{propiedad.DireccionFisica}</h4>
-                                  <h2>{propiedad.Valor}</h2>
-                                  <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal} m²{" "} </i>  
-                                  <i className="fa fa-bed" aria-hidden="true"> {" "} 5 {" "}</i>
-                                  <i className="fa fa-bath" aria-hidden="true"> {" "} 2 {" "}</i>
-                                  <h2>{propiedad.CodigoPropiedad}</h2>
+                                <h3 className="card-title">{propiedad.Titulo}</h3>
+                                <span className="badge badge-pill badge-danger mb-2">
+                                  {propiedad.EstadoPropiedad}
+                                </span>
+                                <h4>{propiedad.DireccionFisica}</h4>
+                                <h3>{propiedad.Valor}</h3>
+                                <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal}{" "} </i>  
+                                <i className="fa fa-bed ml-5" aria-hidden="true"> {propiedad.Dormitorio}{" "}</i>
+                                <i className="fa fa-bath ml-5" aria-hidden="true"> {propiedad.Baño}{" "}</i>
+                                <h3 className="mt-5">{propiedad.CodigoPropiedad} - Cod. Int. {propiedad.id}</h3>
                               </div>
-                          </div>
-
-                        : '' }    
-                        </div>
-                 
+                            </div>
+                        </Link>
+                       </div>
+                    )}    
+                  </>   
                   )
-                }))}      
-        
+          }))} 
+          
         </div>
     
         <div className="row mb-4">
           <div className="col text-justify"> 
-            {/* <div className="col text-justify text-uppercase">  */}
             <b><h3>Conoce a las</h3></b>
-            <b><h2>Propiedades en Alquilers</h2></b>
+            <b><h2>Propiedades en Alquileres</h2></b>
             <hr></hr>
           </div>
         </div>
 
         <div className="row">
-        
-        {propiedades.data.map((propiedad =>  {
-          return(
-              
-            <div id="card" className="col-lg-3">
-              { propiedad.mostrar_portada ?  
-                <div className="card mb-4">
-             
-                    <img src={propiedad.imagen} 
-                        className="card-img-top" 
-                        alt={propiedad.titulo} />
-                    <div className="card-body">
-                        <h3 className="card-title">{propiedad.titulo}</h3>
-                        <span className="badge badge-pill badge-primary mb-2">
-                          Alquiler
-                        </span>
-                        <h4>{propiedad.direccion}</h4>
-                        <h2>$ {propiedad.valor}</h2>
-                        <i className="fa fa-home" aria-hidden="true"> {propiedad.superf_total} m²{" "} </i>  
-                        <i className="fa fa-bed" aria-hidden="true"> {" "} 5 {" "}</i>
-                        <i className="fa fa-bath" aria-hidden="true"> {" "} 2 {" "}</i>
-                    </div>
-                  </div>
-                
-                : '' }
-           
-            </div>
+    
+          {propiedades.data.map((propiedad => { 
          
-          )
-        }))}      
+            return(
+                  <>
+                    { propiedad.EstadoPropiedad === "Alquiler" && (
+                      <div id="card" className="col-lg-3">
+                        <Link to={`/propiedad/${propiedad.id}`} className="text-decoration-none">
+                           <div className="card mb-4">
+                              <img src={propiedad.imag1} 
+                                  className="card-img-top" 
+                                  alt={propiedad.Titulo} /><img/>
+                              <div className="card-body">
+                                <h3 className="card-title">{propiedad.Titulo}</h3>
+                                <span className="badge badge-pill badge-primary mb-2">
+                                  {propiedad.EstadoPropiedad}
+                                </span>
+                                <h4>{propiedad.DireccionFisica}</h4>
+                                <h3>{propiedad.Valor}</h3>
+                                <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal}{" "} </i>  
+                                <i className="fa fa-bed ml-5" aria-hidden="true"> {propiedad.Dormitorio}{" "}</i>
+                                <i className="fa fa-bath ml-5" aria-hidden="true"> {propiedad.Baño}{" "}</i>
+                                <h3 className="mt-5">{propiedad.CodigoPropiedad} - Cod. Int. {propiedad.id}</h3>
+                              </div>
+                            </div>
+                        </Link>
+                       </div>
+                    )}    
+                  </>   
+                  )
+          }))} 
+          
+        </div>
 
-    </div>
+        <div className="row mb-4">
+          <div className="col text-justify"> 
+            {/* <div className="col text-justify text-uppercase">  */}
+            <b><h3>Conoce a las</h3></b>
+            <b><h2>Propiedades en Ventas-Alquileres</h2></b>
+            <hr></hr>
+          </div>
+        </div>
+
+        <div className="row">
+    
+    {propiedades.data.map((propiedad => { 
+   
+      return(
+            <>
+              { propiedad.EstadoPropiedad === "Venta-Alquiler" && (
+                <div id="card" className="col-lg-3">
+                  <Link to={`/propiedad/${propiedad.id}`} className="text-decoration-none">
+                     <div className="card mb-4">
+                        <img src={propiedad.imag1} 
+                            className="card-img-top" 
+                            alt={propiedad.Titulo} /><img/>
+                        <div className="card-body">
+                          <h3 className="card-title">{propiedad.Titulo}</h3>
+                          <span className="badge badge-pill badge-warning mb-2">
+                            {propiedad.EstadoPropiedad}
+                          </span>
+                          <h4>{propiedad.DireccionFisica}</h4>
+                          <h3>{propiedad.Valor}</h3>
+                          <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal}{" "} </i>  
+                          <i className="fa fa-bed ml-5" aria-hidden="true"> {propiedad.Dormitorio}{" "}</i>
+                          <i className="fa fa-bath ml-5" aria-hidden="true"> {propiedad.Baño}{" "}</i>
+                          <h3 className="mt-5">{propiedad.CodigoPropiedad} - Cod. Int. {propiedad.id}</h3>
+                        </div>
+                      </div>
+                  </Link>
+                 </div>
+              )}    
+            </>   
+            )
+    }))} 
+    
+  </div>
+
+
+
     </div>   
     </main>  
 )

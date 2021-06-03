@@ -1,36 +1,61 @@
 .navBar h4 {
   font-size: 1.5rem;
   text-align: center;
-  color: black;
+  color: #d7e2e9;
 }
 
 .navBar {
-  /* background-color: rgba(46, 42, 42, 0.801) !important; */
-  background-color: #ffe600 !important;
+  background-color: #69899f !important;
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: helvetica, serif;
   padding: 1rem;
-  text-align: left;
 }
 
 .navBar nav {
-  /* background-color: rgba(46, 42, 42, 0.801) !important; */
-  background-color: #ffe600 !important;
-  font-size: 1.5rem;
-  left: 20rem;
-  padding: 1rem;
-  color: white;
+  background-color: #69899f !important;
+  font-size: 2rem;
+  display: flex !important;
+  justify-content: center !important;
+  color: #d7e2e9;
 }
 
 .navBar img {
   height: 10rem;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .navBar span {
-  background-color: #ffe600 !important;
-  padding-top: 1rem;
+  background-color: #69899f !important;
   font-size: 2rem;
-  color: white;
+  color: #d7e2e9;
+}
+
+@media (max-width: 768px) {
+  .navBar img {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    justify-content: right;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #navBar img {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    justify-content: right;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+  }
 }

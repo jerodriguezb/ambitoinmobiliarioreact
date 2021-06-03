@@ -28,11 +28,11 @@ const Propiedades = () => {
         <div className="row">
           <div className="col sm-4 mb-2">
             <b><h3>Conoce a las</h3></b>
-            <b><h2>Propiedades en Ventas</h2></b>
+            <b><h2>Propiedades en Ventas y Alquileres</h2></b>
             <hr></hr>
           </div>
         </div>
-        <div className="row lg-3">
+        <div id="card" className="row lg-3">
           {propiedades.data.map((propiedad) => {
             return <PropiedadesItem key={propiedad.id} propiedad={propiedad} />;
           })}

@@ -16,8 +16,8 @@ const Propiedad = () => {
     getPropiedadId(id).then((datos) => {
       console.log(datos);
       setData(datos);
-    });
-  }, [id]);
+    })
+  }, [id])
 
   return (
     <>
@@ -27,6 +27,6 @@ const Propiedad = () => {
     </div>
     <Footer />
     </>
-  );
-};
+  )
+}
 export default Propiedad;

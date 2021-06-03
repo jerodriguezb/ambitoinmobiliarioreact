@@ -15,7 +15,7 @@ const PropiedadDetail = ({data}) => {
         <div>
       
           <div className="row mt-2">
-            <div className="col-8">
+            <div className="col-lg-8">
             <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -305,7 +305,12 @@ const PropiedadDetail = ({data}) => {
           </div>  
           <div className="row">
            <div className="col-8 mt-3">
-              <SimpleMap data={data}/>
+           <SimpleMap
+            data={data.latitud}
+            data2={data.longitud}
+            data3={data.CodigoPropiedad}
+            zoom={9}
+          />
             </div>
           </div>
 

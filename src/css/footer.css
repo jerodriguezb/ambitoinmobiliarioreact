@@ -1,7 +1,7 @@
 #footer {
-  background-color: #ffe600 !important;
+  background-color: #69899f !important;
   min-height: 5rem;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   color: black;
   font-size: 1.75rem;
@@ -15,3 +15,15 @@
   height: 10rem;
   padding: 1rem;
 }
+
+/*footer centrado*/
+@media (max-width: 768px) {
+  #piecontacto p {
+    text-align: center !important;
+  }
+}
+/* @media (max-width: 768px) {
+  #footer img {
+    display: none;
+  }
+} */
