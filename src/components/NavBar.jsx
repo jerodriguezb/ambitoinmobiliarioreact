@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, Button, NavDropdown } from 'react-bootstrap'
 
 import '../css/navbar.css';
 
@@ -14,14 +14,19 @@ const NavBar = () => {
               alt="logo" />
                 <Link claseName = "nav" to="/"><Navbar.Brand>Ambito Inmobiliaria</Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav">
+                {/* <Navbar className="mr-auto"> */}
                     <Nav>
                         <Link to="/" className="nav-link">Home</Link>
                         <Link to="/propiedades" className="nav-link">Propiedades</Link>
                         <Link to="/" className="nav-link">Contactanos</Link>
                         <Link to="/" className="nav-link">Quienes Somos</Link>
+                      
+                        
+                       
                     </Nav>
-                </Navbar>
+                {/* </Navbar> */}
+                </Navbar.Collapse>
             </Navbar>
             <h4>Contacto: Benjamin Neville - Cel +5493816900030 +5493814909195 - Email:inmobiliaria.ambito@gmail.com</h4>  
         </div>

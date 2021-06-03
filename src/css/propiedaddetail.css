@@ -1,8 +1,8 @@
 .card-titulo {
-  color: blue;
+  color: blue !important;
 }
 .card-precio {
-  color: red;
+  color: red !important;
 }
 
 /* .avatar {
@@ -21,6 +21,21 @@
   color: blue;
 }
 
+li,
+h4,
+h5 {
+  color: rgb(163, 159, 159) !important;
+}
+
 .fa-ul {
   font-size: 1.5rem;
+}
+
+#carousel-inner img {
+  /* height: 40rem;
+  width: 10rem; */
+  /* position: relative; */
+  height: 70vh;
+  width: 20vh;
+  /* object-fit: cover; */
 }

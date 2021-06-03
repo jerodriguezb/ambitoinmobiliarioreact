@@ -25,7 +25,7 @@ const Carousel = () => {
 
   return (
 
-  <div className="container">
+  <div>
    
 <div
   id="carousel" clad

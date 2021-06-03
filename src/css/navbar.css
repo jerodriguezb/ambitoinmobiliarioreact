@@ -1,23 +1,29 @@
 .navBar h4 {
   font-size: 1.5rem;
   text-align: center;
-  color: #d7e2e9;
+  color: rgb(163, 159, 159) !important;
 }
 
 .navBar {
-  background-color: #69899f !important;
-  color: white;
+  background-color: #394b57 !important;
+  color: rgb(163, 159, 159) !important;
   font-size: 2rem;
   font-family: helvetica, serif;
   padding: 1rem;
 }
 
-.navBar nav {
-  background-color: #69899f !important;
+.nav-link {
+  color: rgb(163, 159, 159) !important;
   font-size: 2rem;
-  display: flex !important;
-  justify-content: center !important;
-  color: #d7e2e9;
+  -webkit-margin-start: 10rem;
+}
+
+#navBar nav {
+  background-color: #394b57 !important;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: rgb(163, 159, 159) !important;
 }
 
 .navBar img {
@@ -25,12 +31,13 @@
   padding: 1rem;
   display: flex;
   justify-content: center;
+  color: rgb(163, 159, 159) !important;
 }
 
 .navBar span {
-  background-color: #69899f !important;
+  background-color: #394b57 !important;
   font-size: 2rem;
-  color: #d7e2e9;
+  color: rgb(163, 159, 159) !important;
 }
 
 @media (max-width: 768px) {
@@ -44,7 +51,7 @@
 }
 
 @media (max-width: 768px) {
-  #navBar img {
+  .navBar img {
     display: flex;
     justify-content: flex-start;
     align-self: flex-end;
@@ -57,5 +64,12 @@
   .nav {
     display: flex;
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar nav {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }

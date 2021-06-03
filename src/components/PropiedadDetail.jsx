@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {Carousel} from "react-bootstrap";
+
 import SimpleMap from "../components/GoogleMaps";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,37 +13,104 @@ import "../css/propiedaddetail.css";
 const PropiedadDetail = ({data}) => {
   
   return (
-        
         <div>
-      
-          <div className="row mt-2">
-            <div className="col-lg-8">
-            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <img src="https://lh3.googleusercontent.com/yXATP_OwCP6o3DoEKQAdkx16Fzlt2XQLixk9PnegcUUgvEMx2yoxfX7ZxkE-Vs_3VDLIF3cZ5Gvxa-qa3d4q0NS3DaCkS_--OenklRHVsMqTImSudejcVZR73uYfLypWZWGxPTDtJA=w2400" className="d-block w-100" alt="..."></img>
-                    </div>
-                    <div className="carousel-item">
-                      <img src="https://lh3.googleusercontent.com/yXATP_OwCP6o3DoEKQAdkx16Fzlt2XQLixk9PnegcUUgvEMx2yoxfX7ZxkE-Vs_3VDLIF3cZ5Gvxa-qa3d4q0NS3DaCkS_--OenklRHVsMqTImSudejcVZR73uYfLypWZWGxPTDtJA=w2400" className="d-block w-100" alt="..."></img>
-                    </div>
-                    <div className="carousel-item">
-                    <img src="https://lh3.googleusercontent.com/yXATP_OwCP6o3DoEKQAdkx16Fzlt2XQLixk9PnegcUUgvEMx2yoxfX7ZxkE-Vs_3VDLIF3cZ5Gvxa-qa3d4q0NS3DaCkS_--OenklRHVsMqTImSudejcVZR73uYfLypWZWGxPTDtJA=w2400" className="d-block w-100" alt="..."></img>
-    
-                    </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span claclassNamess="sr-only"></span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="sr-only"></span>
-                </a>
-              </div>
-            
-            </div>
+            <div className="row mt-2">
+              <div id="carousel-inner" className="col-lg-8">
+                <Carousel>
+                {data.imag1 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag1}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
 
-             <div className="col-4">
+                  {data.imag2 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag2}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+                
+                  {data.imag3 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag3}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+
+                  {data.imag4 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag4}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+
+                  {data.imag5 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag5}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+
+                  {data.imag6 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag6}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+                  
+                  {data.imag7 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag7}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+
+                  {data.imag8 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag8}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+
+                  {data.imag9 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag9}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+
+                  {data.imag10 != "" && (
+                    <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src= {data.imag10}
+                          alt="Third slide"
+                        />
+                      </Carousel.Item>)}
+
+                </Carousel>
+              </div>
+
+              <div className="col-lg-4">
                     <h3 className = "card-title mt-3">Datos de la Propiedad</h3>
                     <hr></hr>
                     <h4 class="card-title mb-2"> Codigo: {data.CodigoPropiedad}</h4>
@@ -321,3 +390,25 @@ const PropiedadDetail = ({data}) => {
 
 export default PropiedadDetail
 
+    {/* <div className="col-lg-8">
+            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img src= {data.imag1} className="d-block w-100" alt="1"></img>
+                    </div>
+                    <div className="carousel-item active">
+                      <img src= {data.imag2} className="d-block w-100" alt="2"></img>
+                    </div>
+                   
+                </div>
+                <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span claclassNamess="sr-only"></span>
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="sr-only"></span>
+                </a>
+             </div>
+            
+            </div> */}

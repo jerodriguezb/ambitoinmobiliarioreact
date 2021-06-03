@@ -1,14 +1,14 @@
 #footer {
-  background-color: #69899f !important;
+  background-color: #394b57 !important;
   min-height: 5rem;
   padding: 1rem;
   text-align: center;
-  color: black;
+  color: rgb(163, 159, 159);
   font-size: 1.75rem;
 }
 
 #footer a {
-  color: black;
+  color: rgb(163, 159, 159);
 }
 
 #footer img {
