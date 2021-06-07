@@ -18,7 +18,7 @@ const NavBar = () => {
                 {/* <Navbar className="mr-auto"> */}
                     <Nav>
                         <Link to="/" className="nav-link">Home</Link>
-                        <Link to="/propiedades" className="nav-link">Propiedades</Link>
+                        <Link to="/propiedades" className="nav-link">Buscar Propiedades</Link>
                         <Link to="/" className="nav-link">Contactanos</Link>
                         <Link to="/" className="nav-link">Quienes Somos</Link>
                       

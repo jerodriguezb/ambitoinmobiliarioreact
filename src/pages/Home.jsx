@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 // import NavBar from '../components/NavBar'
 // import home2 from '../images/home2.png'
 // import Redes from "../components/Redes"
+import BarraBusqueda from "../components/BarraBusqueda"
 import Carousel from "../components/Carousel"
 import Principal from "../components/Principal"
 import Marquesina from "../components/Marquesina"
@@ -21,6 +22,7 @@ const Home = () => {
     return (
         
         <>
+            
             <Carousel />
             <Principal />
             <Marquesina /> 

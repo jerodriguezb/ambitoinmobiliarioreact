@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from "react";
+
 import { getPropiedades } from "../helpers/rutaPropiedades";
 import PropiedadesItem from "../components/PropiedadesItem";
+import Propiedades from "../pages/Propiedades";
+
 import Busqueda from "../components/Busqueda";
-import Footer from "../components/Footer"
+
+
 
 
 import "../css/propiedades.css";
+import "../css/busqueda.css";
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const Propiedades = () => {
+const BarraBusqueda = () => {
   const [propiedades, setPropiedades] = useState({
     data: [],
     loading: true,
@@ -53,9 +59,8 @@ const filtrarPropiedades = () => {
 
   return (
    <>
-      
-      
-      <Busqueda
+          
+      <Busqueda 
             // inputValue={inputValue}
             setEstadoSelect={setEstadoSelect}
             // setInputValue={setInputValue}
@@ -64,7 +69,13 @@ const filtrarPropiedades = () => {
             setAmbientesSelect={setAmbientesSelect}
             filtrarPropiedades={filtrarPropiedades}
           />
-      <div className="container">
+
+
+
+
+
+            
+      {/* <div className="container">
       
       
         <div className="row">
@@ -81,10 +92,10 @@ const filtrarPropiedades = () => {
           })}
         </div>
       </div>
-      <Footer />
+      <Footer /> */}
     </>  
   );
   
 };
 
-export default Propiedades;
+export default BarraBusqueda;
