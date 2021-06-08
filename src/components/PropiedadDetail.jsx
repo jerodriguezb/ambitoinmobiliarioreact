@@ -374,12 +374,16 @@ const PropiedadDetail = ({data}) => {
           </div>  
           <div className="row">
            <div className="col-8 mt-3">
-           <SimpleMap
-            data={data.latitud}
-            data2={data.longitud}
-            data3={data.CodigoPropiedad}
-            zoom={9}
-          />
+              <SimpleMap
+                data={data.latitud}
+                data2={data.longitud}
+                data3={data.CodigoPropiedad}
+                zoom={9}
+                // loding="false"
+                />
+
+
+
             </div>
           </div>
 

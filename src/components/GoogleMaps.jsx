@@ -4,13 +4,16 @@ import GoogleMapReact from "google-map-react";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 
+
+
 const SimpleMap  = (props) => {
   const [state, setState] = useState({
     center: {
       lat: props.data,
       lng: props.data2,
+      loading: true,
     },
-    zoom: 10,
+    zoom:9,
   });
   console.log(props.data);
   console.log(props.data2);
@@ -19,9 +22,9 @@ const SimpleMap  = (props) => {
       center: {
         lat: props.data,
         lng: props.data2,
-        
+        loading: false,
       },
-      zoom: 10,
+      zoom:9,
       
     });
   }, []);
@@ -39,8 +42,11 @@ const SimpleMap  = (props) => {
             text={props.data3}
           />
         </GoogleMapReact>
+     	
+
       </div>
     </div>
   );
 };
 export default SimpleMap;
+

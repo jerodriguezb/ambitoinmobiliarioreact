@@ -44,6 +44,7 @@ const Busqueda = ({
           <option selected>Elija...</option>
           <option>Venta</option>
           <option>Alquiler</option>
+          <option>Venta-Alquiler</option>
           <option value="">Ninguno de las anteriores</option>
         </select>
 

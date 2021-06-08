@@ -12,6 +12,13 @@
   justify-content: center;
 }
 
+.form-inline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #inlineFormCustomSelectPref {
   background-color: rgb(214, 213, 213);
 

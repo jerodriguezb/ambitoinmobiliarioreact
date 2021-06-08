@@ -18,11 +18,10 @@ const NavBar = () => {
                 {/* <Navbar className="mr-auto"> */}
                     <Nav>
                         <Link to="/" className="nav-link">Home</Link>
-                        <Link to="/propiedades" className="nav-link">Buscar Propiedades</Link>
-                        <Link to="/" className="nav-link">Contactanos</Link>
+                        <Link to="/propiedades" className="nav-link1 text-decoration-none">Buscar Propiedades</Link>
+                        <Link to={{ pathname: "https://docs.google.com/forms/d/e/1FAIpQLScTpePk0bQ3HVpbFP-UCRkmYs6Smkl3_Ck6QT6v9SSG5M8LOg/viewform" }}  className="nav-link" target="_blank">Contactanos</Link>
                         <Link to="/" className="nav-link">Quienes Somos</Link>
-                      
-                        
+                          
                        
                     </Nav>
                 {/* </Navbar> */}

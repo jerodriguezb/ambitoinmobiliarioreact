@@ -53,8 +53,7 @@ const filtrarPropiedades = () => {
 
   return (
    <>
-      
-      
+          
       <Busqueda
             // inputValue={inputValue}
             setEstadoSelect={setEstadoSelect}
@@ -70,7 +69,7 @@ const filtrarPropiedades = () => {
         <div className="row">
           <div className="col sm-4 mb-2">
             <b><h3>Conoce a las</h3></b>
-            <b><h2>Propiedades en Ventas y Alquileres</h2></b>
+            <b><h2>Propiedades en Venta y Alquiler</h2></b>
             <hr></hr>
           </div>
         </div>

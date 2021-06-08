@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom'
+
 import { getCarousel } from "../helpers/rutaPropiedades";
 import '../css/carousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -70,10 +72,11 @@ const Carousel = () => {
               Tenemos a disposición departamentos, casas, oficinas, cocheras, terrenos
               y locales comerciales.
             </p>
-          
-            <button type="button" className="btn btn-info">
-              Contactanos
-            </button>
+            <Link to="/propiedades">
+                <button type="button" className="btn btn-info">
+                  Encontra  tu Propiedad
+                </button>
+            </Link>
           </div>
         </div>
       </div>

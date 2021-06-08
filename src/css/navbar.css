@@ -15,7 +15,16 @@
 .nav-link {
   color: rgb(163, 159, 159) !important;
   font-size: 2rem;
-  -webkit-margin-start: 10rem;
+  display: flex;
+  justify-content: center;
+  -webkit-margin-start: 5rem;
+}
+
+.nav-link1 {
+  color: rgb(230, 148, 166) !important;
+  font-size: 2rem;
+  -webkit-margin-start: 5rem;
+  margin-top: 0.5rem;
 }
 
 #navBar nav {

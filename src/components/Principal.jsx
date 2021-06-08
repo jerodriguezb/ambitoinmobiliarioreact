@@ -26,8 +26,8 @@ const Propiedades = () => {
     <div className="container">
         <div className="row mb-4">
           <div className="col text-justify"> 
-            <b><h3>Conoce a las</h3></b>
-            <b><h2>Propiedades en Ventas</h2></b>
+            <b><h3 className="mt-5">Conoce a las</h3></b>
+            <b><h2>Propiedades en Venta</h2></b>
             <hr></hr>
           </div>
         </div>
@@ -69,8 +69,8 @@ const Propiedades = () => {
     
         <div className="row mb-4">
           <div className="col text-justify"> 
-            <b><h3>Conoce a las</h3></b>
-            <b><h2>Propiedades en Alquileres</h2></b>
+            <b><h3 className="mt-5">Conoce a las</h3></b>
+            <b><h2>Propiedades en Alquiler</h2></b>
             <hr></hr>
           </div>
         </div>
@@ -113,8 +113,8 @@ const Propiedades = () => {
         <div className="row mb-4">
           <div className="col text-justify"> 
             {/* <div className="col text-justify text-uppercase">  */}
-            <b><h3>Conoce a las</h3></b>
-            <b><h2>Propiedades en Ventas-Alquileres</h2></b>
+            <b><h3 className="mt-5">Conoce a las</h3></b>
+            <b><h2>Propiedades en Venta-Alquiler</h2></b>
             <hr></hr>
           </div>
         </div>
