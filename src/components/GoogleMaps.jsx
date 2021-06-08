@@ -9,25 +9,28 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const SimpleMap  = (props) => {
   const [state, setState] = useState({
     center: {
-      lat: props.data,
-      lng: props.data2,
+      lat:  -26.83048965,
+      lng: -65.2038600956889,
+      // lat: props.data,
+      // lng: props.data2,
+
       loading: true,
     },
-    zoom:9,
+    zoom:8,
   });
   console.log(props.data);
   console.log(props.data2);
-  useEffect(() => {
-    setState ({
-      center: {
-        lat: props.data,
-        lng: props.data2,
-        loading: false,
-      },
-      zoom:9,
+  // useEffect(() => {
+  //   setState ({
+  //     center: {
+  //       lat: props.data,
+  //       lng: props.data2,
+  //       loading: false,
+  //     },
+  //     zoom:8,
       
-    });
-  }, []);
+  //   });
+  // }, []);
   return (
     <div>
       <div style={{ height: "60vh", width: "100%" }}>

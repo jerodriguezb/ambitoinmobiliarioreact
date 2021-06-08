@@ -4,6 +4,8 @@ import {Carousel} from "react-bootstrap";
 
 import SimpleMap from "../components/GoogleMaps";
 
+
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Card} from 'react-bootstrap' 
 import "../css/propiedaddetail.css";
@@ -381,7 +383,7 @@ const PropiedadDetail = ({data}) => {
                 zoom={9}
                 // loding="false"
                 />
-
+ 
 
 
             </div>
