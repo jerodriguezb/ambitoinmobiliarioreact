@@ -1,8 +1,8 @@
 html {
   font-size: 62.5%;
-  font-family: helvetica, serif;
 }
 
 body #root {
-  background-color: rgb(40, 40, 47);
+  font-family: "Quicksand";
+  background-color: #f1faee;
 }

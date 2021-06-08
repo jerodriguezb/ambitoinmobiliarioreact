@@ -1,20 +1,24 @@
 .background-curso {
   background-color: #051626;
   height: 100vh;
-  color: #ffff;
+  color: #1d3557;
 }
 
 h2,
 h3 {
-  color: rgb(163, 159, 159) !important;
+  color: #1d3557 !important;
+}
+
+h4 {
+  color: #1d3557 !important;
 }
 
 hr {
-  background-color: rgb(163, 159, 159) !important;
+  background-color: #1d3557 !important;
 }
 
 .card {
-  color: black;
+  color: #1d3557;
   width: 250px;
   border-radius: 10px;
   overflow: hidden;
@@ -25,12 +29,16 @@ hr {
   height: 150px;
 }
 
+#pildora {
+  font-size: 1.5rem;
+}
+
 .card img {
   object-fit: cover;
 }
 
 .card span {
-  color: white;
+  color: #1d3557;
   font-size: 1.5rem;
 }
 

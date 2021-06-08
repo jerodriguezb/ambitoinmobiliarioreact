@@ -47,7 +47,7 @@ const Propiedades = () => {
                                   alt={propiedad.Titulo} /><img/>
                               <div className="card-body">
                                 <h3 className="card-title">{propiedad.Titulo}</h3>
-                                <span className="badge badge-pill badge-danger mb-2">
+                                <span id="pildora" className="badge badge-pill badge-danger mb-2">
                                   {propiedad.EstadoPropiedad}
                                 </span>
                                 <h4>{propiedad.DireccionFisica}</h4>
@@ -90,7 +90,7 @@ const Propiedades = () => {
                                   alt={propiedad.Titulo} /><img/>
                               <div className="card-body">
                                 <h3 className="card-title">{propiedad.Titulo}</h3>
-                                <span className="badge badge-pill badge-primary mb-2">
+                                <span id="pildora" className="badge badge-pill badge-primary mb-2">
                                   {propiedad.EstadoPropiedad}
                                 </span>
                                 <h4>{propiedad.DireccionFisica}</h4>
@@ -134,7 +134,7 @@ const Propiedades = () => {
                             alt={propiedad.Titulo} /><img/>
                         <div className="card-body">
                           <h3 className="card-title">{propiedad.Titulo}</h3>
-                          <span className="badge badge-pill badge-warning mb-2">
+                          <span id="pildora" className="badge badge-pill badge-warning mb-2">
                             {propiedad.EstadoPropiedad}
                           </span>
                           <h4>{propiedad.DireccionFisica}</h4>

@@ -15,9 +15,26 @@ const PropiedadesItem = ({ propiedad }) => {
                        alt={propiedad.Titulo} /><img/>
                   <div className="card-body">
                     <h3 className="card-title">{propiedad.Titulo}</h3>
-                    <span className="badge badge-pill badge-danger mb-2">
-                      {propiedad.EstadoPropiedad}
-                    </span>
+                 
+                    { propiedad.EstadoPropiedad === "Venta" && (          
+                     <span id="pildora" className="badge badge-pill badge-danger mb-2">
+                     {propiedad.EstadoPropiedad}
+                   </span>
+                    )}
+
+                    { propiedad.EstadoPropiedad === "Alquiler" && (          
+                     <span id="pildora" className="badge badge-pill badge-primary mb-2">
+                     {propiedad.EstadoPropiedad}
+                   </span>
+                    )}
+                     { propiedad.EstadoPropiedad === "Venta-Alquiler" && (          
+                     <span id="pildora" className="badge badge-pill badge-warning mb-2">
+                     {propiedad.EstadoPropiedad}
+                   </span>
+                    )}
+
+
+                   
                     <h4>{propiedad.DireccionFisica}</h4>
                     <h3>{propiedad.Valor}</h3>
                     <i className="fa fa-home" aria-hidden="true"> {propiedad.SuperficieTotal}{" "} </i>  

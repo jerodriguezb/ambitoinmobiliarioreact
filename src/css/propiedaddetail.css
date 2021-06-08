@@ -1,8 +1,8 @@
 .card-titulo {
-  color: blue !important;
+  color: #1d3557 !important;
 }
 .card-precio {
-  color: red !important;
+  color: #e63946 !important;
 }
 
 /* .avatar {
@@ -13,18 +13,18 @@
 
 #check {
   font-size: 2rem;
-  color: red;
+  color: #e63946;
 }
 
 #check1 {
   font-size: 2rem;
-  color: blue;
+  color: #1d3557;
 }
 
 li,
 h4,
 h5 {
-  color: rgb(163, 159, 159) !important;
+  color: #1d3557 !important;
 }
 
 .fa-ul {
@@ -38,4 +38,16 @@ h5 {
   height: 70vh;
   width: 20vh;
   /* object-fit: cover; */
+}
+
+#googlemaps {
+  height: 60vh;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #googlemaps {
+    height: 50vh;
+    width: 160%;
+  }
 }

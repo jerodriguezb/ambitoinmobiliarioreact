@@ -21,13 +21,13 @@ const NavBar = () => {
                         <Link to="/propiedades" className="nav-link1 text-decoration-none">Buscar Propiedades</Link>
                         <Link to={{ pathname: "https://docs.google.com/forms/d/e/1FAIpQLScTpePk0bQ3HVpbFP-UCRkmYs6Smkl3_Ck6QT6v9SSG5M8LOg/viewform" }}  className="nav-link" target="_blank">Contactanos</Link>
                         <Link to="/" className="nav-link">Quienes Somos</Link>
-                          
+                        <Link to="/" className="nav-link"></Link> 
                        
                     </Nav>
                 {/* </Navbar> */}
                 </Navbar.Collapse>
             </Navbar>
-            <h4>Contacto: Benjamin Neville - Cel +5493816900030 +5493814909195 - Email:inmobiliaria.ambito@gmail.com</h4>  
+            <h4>Contacto: Benjamin Neville +54 381-69000</h4>  
         </div>
     )
 }

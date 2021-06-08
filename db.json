@@ -5,78 +5,10 @@
       "usuario": "pmarino2013@gmail.com",
       "password": "123456",
       "rol": "USER_ROLE"
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 2
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 3
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 4
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 5
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 6
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 7
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 8
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 9
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 10
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 11
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 12
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 13
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 14
-    },
-    {
-      "email": "pmarino@gmail.com",
-      "usuario": "pmarino",
-      "id": 15
     }
+   
   ],
+
   "propiedades": [
     {
       "id": 1,
@@ -1331,41 +1263,5 @@
       "latitud":-26.855188,
       "longitud":-65.691090
     }
-  
-  
-  ],
-
-  "programas": [
-    {
-      "id": 1,
-      "id_curso": 1,
-      "programa": [
-        "Presentación de CSS",
-        "Position",
-        "Flex Box",
-        "Responsive designe"
-      ]
-    },
-    {
-      "id": 2,
-      "id_curso": 2,
-      "programa": [
-        "Variables y operadores",
-        "Trabajando con String",
-        "Objeto Math",
-        "Funciones anónimas y declarativas"
-      ]
-    },
-    {
-      "id": 3,
-      "id_curso": 3,
-      "programa": [
-        "Que es HTML?",
-        "Etiquetas semánticas",
-        "Primer proyecto de supermercado",
-        "Tablas",
-        "Formularios"
-      ]
-    }
-  ]
+   ]
 }
