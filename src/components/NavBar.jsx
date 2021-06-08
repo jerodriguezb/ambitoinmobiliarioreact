@@ -27,7 +27,7 @@ const NavBar = () => {
                 {/* </Navbar> */}
                 </Navbar.Collapse>
             </Navbar>
-            <h4>Contacto: Benjamin Neville +54 381-69000</h4>  
+            <h4>Contacto: Benjamin Neville +54 381-6900030</h4>  
         </div>
     )
 }
