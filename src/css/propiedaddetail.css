@@ -39,15 +39,3 @@ h5 {
   width: 20vh;
   /* object-fit: cover; */
 }
-
-#googlemaps {
-  height: 60vh;
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  #googlemaps {
-    height: 50vh;
-    width: 160%;
-  }
-}

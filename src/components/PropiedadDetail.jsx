@@ -379,9 +379,7 @@ const PropiedadDetail = ({data}) => {
               <SimpleMap
                 data={data.latitud}
                 data2={data.longitud}
-                data3={data.CodigoPropiedad}
-                zoom={9}
-                // loding="false"
+               
                 />
  
 
