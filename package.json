@@ -2,9 +2,6 @@
   "name": "academy-app",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
-  "author": "Youssef Zidan",
-  "license": "ISC",
   "homepage": "https://proyectosfabriciodimani.github.io/ambito/",
   "dependencies": {
     "@syncromatics/react-google-maps": "^9.8.0",
@@ -26,7 +23,7 @@
     "json-server": "^0.16.3"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
