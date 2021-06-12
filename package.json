@@ -1,7 +1,6 @@
 {
   "name": "academy-app",
   "version": "0.1.0",
-  "main": "server.js",
   "private": true,
   "homepage": "https://proyectosfabriciodimani.github.io/ambito/",
   "license": "ISC",
@@ -25,7 +24,7 @@
     "json-server": "^0.16.3"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
