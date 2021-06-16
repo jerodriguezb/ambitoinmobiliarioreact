@@ -20,7 +20,7 @@ import "../css/footer.css";
 const Home = () => {
   return (
     <>
-      {/* <Carousel /> */}
+      <Carousel />
       <Principal />
       <Marquesina />
       <Footer />
