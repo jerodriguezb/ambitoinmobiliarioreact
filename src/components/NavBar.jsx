@@ -104,6 +104,9 @@ const NavBar = () => {
             <Link to="/" className="nav-link">
               Quienes Somos
             </Link>
+            <Link to="/" className="nav-link">
+              Reciclamos
+            </Link>
             <Link to="/" className="nav-link"></Link>
           </Nav>
 
@@ -119,7 +122,6 @@ const NavBar = () => {
           {/* </Navbar> */}
         </Navbar.Collapse>
       </Navbar>
-      <h4>Contacto: Benjamin Neville +54 381-6900030</h4>
     </div>
   );
 };

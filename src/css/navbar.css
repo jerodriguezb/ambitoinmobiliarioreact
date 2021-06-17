@@ -30,6 +30,8 @@
   font-size: 2rem;
   -webkit-margin-start: 5rem;
   margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 #navBar nav {

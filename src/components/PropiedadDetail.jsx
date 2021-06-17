@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import SimpleMap from "../components/GoogleMaps";
@@ -13,37 +13,150 @@ const PropiedadDetail = ({ data }) => {
   return (
     <div>
       <div>
-        <div className="row mt-2">
+        <div className="row mt-5">
+          {" "}
+          <div id="carousel-inner" className="col-lg-8">
+            <Carousel>
+              {propiedad?.imag1 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag1}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag2 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag2}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag3 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag3}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag4 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag4}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag5 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag5}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag6 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag6}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag7 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag7}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag8 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag8}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag9 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag9}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+
+              {propiedad?.imag10 != "" && (
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={propiedad?.imag10}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              )}
+            </Carousel>
+          </div>{" "}
           <div className="col-lg-4">
             <h3 className="card-title mt-3">Datos de la Propiedad</h3>
             <hr></hr>
-            <h4 class="card-title mb-2"> Codigo: {data.CodigoPropiedad}</h4>
-            <h3 class="card-titulo mb-2">{data.Titulo}</h3>
-            <h4 class="card-precio mb-2"> Valor: {data.Valor}</h4>
+            <h4 class="card-title mb-2">
+              {" "}
+              Codigo: {propiedad?.CodigoPropiedad}
+            </h4>
+            <h3 class="card-titulo mb-2">{propiedad?.Titulo}</h3>
+            <h4 class="card-precio mb-2"> Valor: {propiedad?.Valor}</h4>
             <h4 class="card-title mb-2 mt-3">
               {" "}
-              Estado: {data.EstadoPropiedad}
+              Estado: {propiedad?.EstadoPropiedad}
             </h4>
-            <h4 class="card-title mb-2"> Tipo: {data.TipoPropiedad}</h4>
-            <h4 class="card-title mb-2"> Dirección: {data.DireccionFisica}</h4>
-            <h4 class="card-title mb-2"> Barrio: {data.Barrio}</h4>
-            <h4 class="card-title mb-2"> Lugar: {data.Lugar}</h4>
+            <h4 class="card-title mb-2"> Tipo: {propiedad?.TipoPropiedad}</h4>
+            <h4 class="card-title mb-2">
+              {" "}
+              Dirección: {propiedad?.DireccionFisica}
+            </h4>
+            <h4 class="card-title mb-2"> Barrio: {propiedad?.Barrio}</h4>
+            <h4 class="card-title mb-2"> Lugar: {propiedad?.Lugar}</h4>
             <h5 class="card-title mb-2 mt-3">
               {" "}
-              Sup. Total: {data.SuperficieTotal}
+              Sup. Total: {propiedad?.SuperficieTotal}
             </h5>
             <h5 class="card-title mb-2">
               {" "}
-              Sup. Propia: {data.SuperficiePropia}
-            </h5>
-            <h5 class="card-title mb-2"> Sup. Comun: {data.SuperficieComun}</h5>
-            <h5 class="card-title mb-2">
-              {" "}
-              Sup. Cubierta: {data.SuperficieCubierta}
+              Sup. Propia: {propiedad?.SuperficiePropia}
             </h5>
             <h5 class="card-title mb-2">
               {" "}
-              Sup. SemiCubierta: {data.SuperficieSemiCubierta}
+              Sup. Comun: {propiedad?.SuperficieComun}
+            </h5>
+            <h5 class="card-title mb-2">
+              {" "}
+              Sup. Cubierta: {propiedad?.SuperficieCubierta}
+            </h5>
+            <h5 class="card-title mb-2">
+              {" "}
+              Sup. SemiCubierta: {propiedad?.SuperficieSemiCubierta}
             </h5>
           </div>
         </div>
@@ -51,8 +164,8 @@ const PropiedadDetail = ({ data }) => {
           <div className="col-8">
             <h3 className="card-title mt-3">Descripción de la Propiedad</h3>
             <hr></hr>
-            <h5>{data.Descripcion}</h5>
-            <h5>{data.InformacionAdicional}</h5>
+            <h4>{propiedad?.Descripcion}</h4>
+            <h4>{propiedad?.InformacionAdicional}</h4>
           </div>
         </div>
 
@@ -66,25 +179,25 @@ const PropiedadDetail = ({ data }) => {
                 <ul className="fa-ul">
                   <li>
                     <i id="check1" className="fa fa-check-circle mr-2"></i>
-                    Ambientes: {data.Ambientes}
+                    Ambientes: {propiedad?.Ambientes}
                   </li>
                 </ul>
                 <ul className="fa-ul">
                   <li>
                     <i id="check1" className="fa fa-check-circle mr-2"></i>
-                    Dormitorios: {data.Dormitorio}
+                    Dormitorios: {propiedad?.Dormitorio}
                   </li>
                 </ul>
                 <ul className="fa-ul">
                   <li>
                     <i id="check1" className="fa fa-check-circle mr-2"></i>
-                    Baños: {data.Baño}
+                    Baños: {propiedad?.Baño}
                   </li>
                 </ul>
               </div>
 
               <div className="row mt-5">
-                {data.Cocina ? (
+                {propiedad?.Cocina ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -95,7 +208,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Comedor ? (
+                {propiedad?.Comedor ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -106,7 +219,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.CocinaComedor ? (
+                {propiedad?.CocinaComedor ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -117,7 +230,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Placard ? (
+                {propiedad?.Placard ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -128,7 +241,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.ComedorDiario ? (
+                {propiedad?.ComedorDiario ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -139,7 +252,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Dependencia ? (
+                {propiedad?.Dependencia ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -150,7 +263,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.BañoServicio ? (
+                {propiedad?.BañoServicio ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -161,7 +274,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Lavadero ? (
+                {propiedad?.Lavadero ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -172,7 +285,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Living ? (
+                {propiedad?.Living ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -182,7 +295,7 @@ const PropiedadDetail = ({ data }) => {
                 ) : (
                   ""
                 )}
-                {data.LivingComedor ? (
+                {propiedad?.LivingComedor ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -193,7 +306,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Escritorio ? (
+                {propiedad?.Escritorio ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -204,7 +317,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Toillette ? (
+                {propiedad?.Toillette ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -215,7 +328,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Balcon ? (
+                {propiedad?.Balcon ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -226,7 +339,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Baulera ? (
+                {propiedad?.Baulera ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -237,7 +350,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Jardin ? (
+                {propiedad?.Jardin ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -248,7 +361,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.SUM ? (
+                {propiedad?.SUM ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -259,7 +372,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Solarium ? (
+                {propiedad?.Solarium ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -270,7 +383,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Patio ? (
+                {propiedad?.Patio ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -281,7 +394,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Quincho ? (
+                {propiedad?.Quincho ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -292,7 +405,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Pileta ? (
+                {propiedad?.Pileta ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -303,7 +416,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Galeria ? (
+                {propiedad?.Galeria ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -314,7 +427,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Asador ? (
+                {propiedad?.Asador ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -325,7 +438,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Cochera ? (
+                {propiedad?.Cochera ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -336,7 +449,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.CocheraCubierta ? (
+                {propiedad?.CocheraCubierta ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -347,7 +460,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Suite ? (
+                {propiedad?.Suite ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -358,7 +471,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.SalaEstarPlayroom ? (
+                {propiedad?.SalaEstarPlayroom ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -369,7 +482,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Internet ? (
+                {propiedad?.Internet ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -380,7 +493,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Electricidad ? (
+                {propiedad?.Electricidad ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -391,7 +504,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Gas ? (
+                {propiedad?.Gas ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -402,7 +515,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Agua ? (
+                {propiedad?.Agua ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -413,7 +526,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Cloacas ? (
+                {propiedad?.Cloacas ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -424,7 +537,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Cable ? (
+                {propiedad?.Cable ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -435,7 +548,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Seguridad ? (
+                {propiedad?.Seguridad ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -446,7 +559,7 @@ const PropiedadDetail = ({ data }) => {
                   ""
                 )}
 
-                {data.Expensas ? (
+                {propiedad?.Expensas ? (
                   <ul className="fa-ul">
                     <li>
                       <i id="check" className="fa fa-check-circle mr-2"></i>
@@ -462,7 +575,7 @@ const PropiedadDetail = ({ data }) => {
         </div>
         <div className="row">
           <div className="col-8 mt-3">
-            <SimpleMap data={data.latitud} data2={data.longitud} />
+            <SimpleMap data={propiedad?.Latitud} data2={propiedad?.Longitud} />
           </div>
         </div>
       </div>
