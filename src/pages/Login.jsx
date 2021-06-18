@@ -1,5 +1,7 @@
 import React from "react";
-// import LoginForm from "../components/LoginForm";
+import LoginForm from "../components/LoginForm";
+
+import "../css/login.css";
 
 const Login = () => {
     return (
@@ -13,7 +15,7 @@ const Login = () => {
                 <div className="col-4 offset-4">
                     <p className="text-center">Ingresa tu correo electrónico</p>
 
-                    {/* <LoginForm /> */}
+                    <LoginForm />
 
                     <div className="text-center text-muted mt-4">
                         <span>

@@ -60,84 +60,86 @@ export const getMarquesina = async () => {
   return data;
 };
 
-//Crear nuevo curso
-// export const addPropiedad = async (datos) => {
-//   // console.log(datos);
-//   const token = JSON.parse(localStorage.getItem("token")) || "";
-//   let url = "http://localhost:3004/cursos";
 
-//   const options = {
-//     method: "POST",
-//     headers: {
-//       "content-type": "application/x-www-form-urlencoded",
-//       token: token,
-//     },
-//     data: qs.stringify(datos),
-//   };
-//   try {
-//     const resp = await axios(url, options);
-//     const { data } = resp;
-//     console.log(resp);
-//     return data;
-//   } catch (error) {
-//     // console.log(error.response.data);
-//     return {
-//       data: error.response.data,
-//       loading: false,
-//     };
-//   }
-// };
 
-//Actualizar curso
-// export const modifCurso = async (datos, id) => {
-//   // console.log(datos);
-//   const token = JSON.parse(localStorage.getItem("token")) || "";
-//   let url = `http://localhost:3004/cursos/${id}`;
+// Crear nuevo curso
+export const addPropiedad = async (datos) => {
+  // console.log(datos);
+  const token = JSON.parse(localStorage.getItem("token")) || "";
+  let url = "http://localhost:3004/propiedades";
 
-//   const options = {
-//     method: "PUT",
-//     headers: {
-//       "content-type": "application/x-www-form-urlencoded",
-//       token: token,
-//     },
-//     data: qs.stringify(datos),
-//   };
-//   try {
-//     const resp = await axios(url, options);
-//     const { data } = resp;
-//     console.log(data);
-//     return data;
-//   } catch (error) {
-//     console.log(error.response.data);
-//     return {
-//       data: error.response.data,
-//       loading: false,
-//     };
-//   }
-// };
+  const options = {
+    method: "POST",
+    headers: {
+      "content-type": "application/x-www-form-urlencoded",
+      token: token,
+    },
+    data: qs.stringify(datos),
+  };
+  try {
+    const resp = await axios(url, options);
+    const { data } = resp;
+    console.log(resp);
+    return data;
+  } catch (error) {
+    // console.log(error.response.data);
+    return {
+      data: error.response.data,
+      loading: false,
+    };
+  }
+};
 
-//Inactivar un curso
-// export const delCurso = async (id) => {
-//   const token = JSON.parse(localStorage.getItem("token")) || "";
-//   let url = `http://localhost:3004/cursos/${id}`;
+// Actualizar Propiedad
+export const modifPropiedad = async (datos, id) => {
+  // console.log(datos);
+  const token = JSON.parse(localStorage.getItem("token")) || "";
+  let url = `http://localhost:3004/propiedades/${id}`;
 
-//   const options = {
-//     method: "DELETE",
-//     headers: {
-//       "content-type": "application/x-www-form-urlencoded",
-//       token: token,
-//     },
-//   };
-//   try {
-//     const resp = await axios(url, options);
-//     const { data } = resp;
-//     // console.log(data);
-//     return data;
-//   } catch (error) {
-//     // console.log(error.response.data);
-//     return {
-//       data: error.response.data,
-//       loading: false,
-//     };
-//   }
-// };
+  const options = {
+    method: "PUT",
+    headers: {
+      "content-type": "application/x-www-form-urlencoded",
+      token: token,
+    },
+    data: qs.stringify(datos),
+  };
+  try {
+    const resp = await axios(url, options);
+    const { data } = resp;
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error.response.data);
+    return {
+      data: error.response.data,
+      loading: false,
+    };
+  }
+};
+
+// Inactivar un propiedad
+export const delPropiedad = async (id) => {
+  const token = JSON.parse(localStorage.getItem("token")) || "";
+  let url = `http://localhost:3004/propiedades/${id}`;
+
+  const options = {
+    method: "DELETE",
+    headers: {
+      "content-type": "application/x-www-form-urlencoded",
+      token: token,
+    },
+  };
+  try {
+    const resp = await axios(url, options);
+    const { data } = resp;
+    // console.log(data);
+    return data;
+  } catch (error) {
+    // console.log(error.response.data);
+    return {
+      data: error.response.data,
+      loading: false,
+    };
+  }
+};

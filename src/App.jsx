@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import Propiedad from "./pages/Propiedad";
 import Login from "./pages/Login";
+import Admin from "./pages/Admin";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
             <Route exact path="/login" component={Login} />
             <Route exact path="/propiedades" component={Propiedades} />
             <Route exact path="/propiedad/:id" component={Propiedad} />
+            <Route exact path="/admin" component={Admin} />
             <Route component={Error404} />
           </Switch>
         </Layout>

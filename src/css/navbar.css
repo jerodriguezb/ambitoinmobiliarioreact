@@ -1,5 +1,5 @@
 .navBar h4 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-align: center;
   background-color: #1d3557 !important;
   color: #f1faee !important;
@@ -17,18 +17,28 @@
 .nav-link {
   font-family: "Quicksand";
   background-color: #1d3557 !important;
-  font-size: 2rem;
+  font-size: 1.75rem;
   display: flex;
   justify-content: center;
-  -webkit-margin-start: 5rem;
+  -webkit-margin-start: 2rem;
   color: #f1faee !important;
 }
 
 .nav-link1 {
   font-family: "Quicksand";
   color: #e63946 !important;
-  font-size: 2rem;
-  -webkit-margin-start: 5rem;
+  font-size: 1.75rem;
+  -webkit-margin-start: 2rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link2 {
+  font-family: "Quicksand";
+  color: rgb(18, 204, 18) !important;
+  font-size: 1.75rem;
+  -webkit-margin-start: 2rem;
   margin-top: 0.5rem;
   display: flex;
   justify-content: center;
@@ -36,7 +46,7 @@
 
 #navBar nav {
   background-color: #1d3557 !important;
-  font-size: 2rem;
+  font-size: 1.75rem;
   display: flex;
   justify-content: center;
   color: rgb(163, 159, 159) !important;
@@ -55,6 +65,11 @@
   font-size: 2.2rem;
   color: #f1faee !important;
   font-family: "Times New Roman", Times, serif;
+}
+
+#booton {
+  font-family: "Quicksand";
+  font-size: 1.75rem;
 }
 
 @media (max-width: 768px) {
@@ -88,5 +103,11 @@
   .navBar nav {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #booton {
+    left: 100%;
   }
 }

@@ -1,75 +1,75 @@
-import React from "react";
-// import jwt_decode from 'jwt-decode'//Paquete para decodificar el Token
+import React, {useEffect, useState}from "react";
+import jwt_decode from "jwt-decode"//Paquete para decodificar el Token
 import { Link, useLocation, useHistory } from "react-router-dom";
 
 // import { getCursos } from "../helpers/rutaCursos";
-// import { getPropiedades } from "../helpers/rutaPropiedades";
+import { getPropiedades } from "../helpers/rutaPropiedades";
 import { Navbar, Nav, Button, NavDropdown } from "react-bootstrap";
 
 import "../css/navbar.css";
 
 const NavBar = () => {
-  // //Defino location e history
-  // const location = useLocation();
-  // const history = useHistory();
+  //Defino location e history
+  const location = useLocation();
+  const history = useHistory();
 
-  // //estado para manejar el usuario
-  // const [user, setUser] = useState("Iniciar sesión");
+  //estado para manejar el usuario
+  const [user, setUser] = useState("Iniciar sesión");
 
-  // const [payload, setPayload] = useState({
-  //     role: "",
-  // });
+  const [payload, setPayload] = useState({
+      role: "",
+  });
 
-  // //estado para manejar los datos de los cursos
-  // const [cursos, setCursos] = useState({
-  //     data: {},
-  //     loading: true,
-  // });
+  //estado para manejar los datos de los cursos
+  const [propiedades, setPropiedades] = useState({
+      data: {},
+      loading: true,
+  });
 
-  // //Si cambia la locación asigno a user el valor de localstorage
-  // useEffect(() => {
-  //     setUser(JSON.parse(localStorage.getItem("usuario")) || "Iniciar Sesión");
-  //     ActualizarData();
-  //     checkToken();
-  // }, [location]);
+  //Si cambia la locación asigno a user el valor de localstorage
+  useEffect(() => {
+      setUser(JSON.parse(localStorage.getItem("usuario")) || "Iniciar Sesión");
+      ActualizarData();
+      checkToken();
+  }, [location]);
 
-  // //Cuando monto navbar se cargan los cursos
-  // useEffect(() => {
-  //     ActualizarData();
-  //     // getCursos().then((datos) => {
-  //     //   setCursos({
-  //     //     data: datos,
-  //     //     loading: false,
-  //     //   });
-  //     // });
-  // }, []);
+  //Cuando monto navbar se cargan los cursos
+  useEffect(() => {
+      ActualizarData();
+      // getCursos().then((datos) => {
+      //   setCursos({
+      //     data: datos,
+      //     loading: false,
+      //   });
+      // });
+  }, []);
 
-  // const ActualizarData = () => {
-  //     getCursos(0, 100).then((datos) => {
-  //         setCursos({
-  //             data: datos,
-  //             loading: false,
-  //         });
-  //     });
-  // };
+  const ActualizarData = () => {
+      getPropiedades(0, 100).then((datos) => {
+          setPropiedades({
+              data: datos,
+              loading: false,
+          });
+      });
+  };
 
-  // //Manejo el deslogueo de la web
-  // const handleLogin = () => {
-  //     localStorage.setItem("token", JSON.stringify(""));
-  //     localStorage.setItem("id", JSON.stringify(""));
-  //     localStorage.setItem("usuario", JSON.stringify("Iniciar Sesión"));
-  //     setUser(JSON.parse(localStorage.getItem("usuario")));
-  //     setPayload({ role: "" });
-  //     history.push("/login");
-  // };
+  //Manejo el deslogueo de la web
+  const handleLogin = () => {
+      localStorage.setItem("token", JSON.stringify(""));
+      localStorage.setItem("id", JSON.stringify(""));
+      localStorage.setItem("usuario", JSON.stringify("Iniciar Sesión"));
+      setUser(JSON.parse(localStorage.getItem("usuario")));
+      setPayload({ role: "" });
+      history.push("/login");
+  };
 
-  // const checkToken = () => {
-  //     let token = JSON.parse(localStorage.getItem("token")) || "";
-  //     if (token.length > 0) {
-  //         let token_decode = jwt_decode(localStorage.getItem("token")); //Obteniendo los datos del payload
-  //         setPayload(token_decode.usuario);
-  //     }
-  // };
+  const checkToken = () => {
+      let token = JSON.parse(localStorage.getItem("token")) || "";
+      if (token.length > 0) {
+          let token_decode = jwt_decode(localStorage.getItem("token")); //Obteniendo los datos del payload
+          setPayload(token_decode.usuario);
+      }
+  };
 
   return (
     <div id="navBar" className="navBar">
@@ -104,20 +104,20 @@ const NavBar = () => {
             <Link to="/" className="nav-link">
               Quienes Somos
             </Link>
-            <Link to="/" className="nav-link">
-              Reciclamos
+            <Link to="/" className="nav-link2 text-decoration-none">
+              Conciencia ECO
             </Link>
             <Link to="/" className="nav-link"></Link>
           </Nav>
 
-          {/* {payload.role === "ADMIN_ROLE" && (
+          {payload.role === "ADMIN_ROLE" && (
             <Link to="/admin" className="text-decoration-none text-muted mr-2">
               Administrador
             </Link>
           )}
-          <button className="btn btn-outline-info" onClick={handleLogin}>
+          <button id="booton" className="btn btn-outline-info" onClick={handleLogin}>
             {user}
-          </button> */}
+          </button>
 
           {/* </Navbar> */}
         </Navbar.Collapse>

@@ -79,8 +79,8 @@ const Busqueda = ({
           <option selected>Elija...</option>
           <option>San Miguel de Tucuman</option>
           <option>Yerba Buena</option>
-          <option>Tafí del Valle</option>
-          <option>Tafí Viejo</option>
+          <option>Tafi del Valle</option>
+          <option>Tafi Viejo</option>
           <option>Banda del Rio Sali</option>
           <option>Concepcion</option>
           <option>Monteros</option>

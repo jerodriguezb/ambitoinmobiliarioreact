@@ -1,0 +1,22 @@
+.form-group label {
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+}
+.form-group input {
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+}
+.alert {
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-family: "Quicksand";
+}
+
+.form-group button {
+  font-size: 3rem;
+  font-family: "Quicksand";
+}

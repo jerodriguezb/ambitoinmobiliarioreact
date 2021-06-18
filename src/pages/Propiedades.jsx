@@ -3,52 +3,44 @@ import { getPropiedades } from "../helpers/rutaPropiedades";
 import PropiedadesItem from "../components/PropiedadesItem";
 import Busqueda from "../components/Busqueda";
 import Footer from "../components/Footer";
-
 import "../css/propiedades.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 const Propiedades = () => {
   const [propiedades, setPropiedades] = useState({
-    data: {},
+    data: [],
     loading: true,
   });
-
   const [propiedadesFiltradas, setPropiedadesFiltradas] = useState([]);
   //const [inputValue, setInputValue] = useState("");
   const [estadoSelect, setEstadoSelect] = useState("");
   const [tipoSelect, setTipoSelect] = useState("");
   const [lugarSelect, setLugarSelect] = useState("");
   const [ambientesSelect, setAmbientesSelect] = useState("");
-
   useEffect(() => {
     getPropiedades().then((propiedades) => {
       setPropiedades({
         data: propiedades,
         loading: false,
       });
-      setPropiedadesFiltradas(propiedades);
+      //setPropiedadesFiltradas(propiedades);
     });
   }, []);
-
   const filtrarPropiedades = () => {
-    const estadoFilter = propiedades.data.filter((inmueble) => {
+    const estadoFilter = propiedades.data.propiedades.filter((inmueble) => {
       return estadoSelect === "" || inmueble.EstadoPropiedad === estadoSelect;
     });
-
     const tipoFilter = estadoFilter.filter((inmueble) => {
       return tipoSelect === "" || inmueble.TipoPropiedad === tipoSelect;
     });
-
     const lugarFilter = tipoFilter.filter((inmueble) => {
       return lugarSelect === "" || inmueble.Lugar === lugarSelect;
     });
-
     const ambientesFilter = lugarFilter.filter((inmueble) => {
       return ambientesSelect === "" || inmueble.Ambientes === ambientesSelect;
     });
     setPropiedadesFiltradas(ambientesFilter);
   };
-
+  //console.log(propiedadesFiltradas);
   return (
     <>
       <Busqueda
@@ -72,20 +64,20 @@ const Propiedades = () => {
             <hr></hr>
           </div>
         </div>
-
         {!propiedades.loading && (
-          <div id="card" className="row lg-3">
-            {propiedades.data.propiedades.map((propiedad) => {
-              return (
-                <PropiedadesItem key={propiedad._id} propiedad={propiedad} />
-              );
-            })}
-          </div>
+          <>
+            <div id="card" className="row lg-3">
+              {propiedadesFiltradas.map((propiedad) => {
+                return (
+                  <PropiedadesItem key={propiedad._id} propiedad={propiedad} />
+                );
+              })}
+            </div>
+          </>
         )}
       </div>
       <Footer />
     </>
   );
 };
-
 export default Propiedades;
